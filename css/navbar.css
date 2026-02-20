@@ -1,0 +1,141 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: var(--border-subtle);
+}
+
+.navbar-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-logo {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.navbar-logo:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.navbar-tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab-button {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-button:hover {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.tab-button.active {
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.contact-button {
+    background-color: var(--aratt-yellow);
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(250, 204, 21, 0.5);
+    background-color: #fbbf24;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .tab-content.active {
+        padding-top: 20px;
+    }
+}
+
+#contact-tab .header {
+    margin-bottom: 24px;
+}
+
+@media (max-width: 480px) {
+    .navbar-content {
+        padding: 10px 16px;
+    }
+
+    .navbar-left {
+        gap: 12px;
+    }
+
+    .navbar-logo img {
+        height: 32px;
+        width: 32px;
+    }
+
+    .navbar-tabs {
+        gap: 2px;
+    }
+
+    .tab-button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    .contact-button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}

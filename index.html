@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swift Ahmedabad</title>
     <meta name="description" content="The official community for Swift developers in Ahmedabad. Join us for meetups, workshops, and networking.">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,31 +14,97 @@
     <!-- Sticky Navigation Bar -->
     <nav class="navbar">
         <div class="navbar-content">
-            <div class="navbar-logo">
-                <img id="navbar-logo-img" src="" alt="Logo">
+            <div class="navbar-left">
+                <button class="navbar-logo" id="navbar-logo-btn" aria-label="Go to Community">
+                    <img id="navbar-logo-img" src="" alt="Logo">
+                </button>
+                <div class="navbar-tabs">
+                    <button class="tab-button" data-tab="team">Team</button>
+                    <button class="tab-button" data-tab="app">SwiftTalks App</button>
+                </div>
             </div>
-            <a id="contact-btn" href="" class="contact-button">Contact Us</a>
+            <button id="contact-btn" class="contact-button">Contact Us</button>
         </div>
     </nav>
 
     <div class="container">
-        <header class="bento-item header">
-            <div class="logo">
-                <img id="community-logo" src="" alt="Community Logo" class="swift-logo">
+        <!-- Community Tab -->
+        <div id="community-tab" class="tab-content active">
+            <header class="bento-item header">
+                <div class="logo">
+                    <img id="community-logo" src="" alt="Community Logo" class="swift-logo">
+                </div>
+                <h1 id="community-name" class="gradient-text"></h1>
+                <p id="community-tagline"></p>
+            </header>
+
+            <div id="stats-container" class="stats-grid">
+                <!-- Stats will be dynamically loaded from stats.json -->
             </div>
-            <h1 id="community-name"></h1>
-            <p id="community-tagline"></p>
-        </header>
 
-        <main class="bento-grid" id="links-container">
-            <!-- Links will be dynamically loaded from links.json -->
-        </main>
+            <main class="bento-grid" id="links-container">
+                <!-- Links will be dynamically loaded from links.json -->
+            </main>
+            
+            <footer class="bento-item footer">
+                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
+            </footer>
+        </div>
 
-        <footer class="bento-item footer">
-            <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
-        </footer>
+        <!-- Team Tab -->
+        <div id="team-tab" class="tab-content">
+            <header class="bento-item header">
+                <h1 class="gradient-text">Our Team</h1>
+                <p>The amazing people behind Swift Ahmedabad</p>
+            </header>
+
+            <main class="team-grid" id="team-container">
+                <!-- Team members will be dynamically loaded from team.json -->
+            </main>
+        </div>
+
+        <!-- App Tab -->
+        <div id="app-tab" class="tab-content">
+            <header class="bento-item header app-header">
+                <div class="app-header-content">
+                    <img id="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png" alt="App Icon" class="app-icon">
+                    <h1 id="app-name" class="gradient-text"></h1>
+                    <p id="app-tagline"></p>
+                    <p id="app-description"></p>
+                    <div class="app-store-buttons">
+                        <a id="testflight-btn" href="" class="store-button" target="_blank">
+                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            TestFlight
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="app-features" id="app-features-container">
+                <!-- App features will be dynamically loaded from app.json -->
+            </main>
+            
+            <footer class="bento-item footer">
+                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <!-- Contact Tab -->
+        <div id="contact-tab" class="tab-content">
+            <header class="bento-item header">
+                <h1 class="gradient-text"></h1>
+                <p></p>
+            </header>
+
+            <main class="contact-grid" id="contact-container">
+                <!-- Contact items will be dynamically loaded from contact.json -->
+            </main>
+        </div>
     </div>
 
     <script src="app.js"></script>
+    <script src="team.js"></script>
+    <script src="swift-talks.js"></script>
+    <script src="contact.js"></script>
 </body>
 </html>

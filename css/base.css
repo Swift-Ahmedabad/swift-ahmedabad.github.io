@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #000000;
+    --card-bg: #1a1a1a;
+    --card-bg-hover: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --swift-orange: #F05138;
+    --twitter-blue: #000000;
+    --linkedin-blue: #0A66C2;
+    --whatsapp-green: #25D366;
+    --instagram-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    --discord-purple: #5865F2;
+    --luma-pink: #FF6B9D;
+    --aratt-yellow: #FACC15;
+    --maps-red: #EA4335;
+
+    --gradient-text: linear-gradient(135deg, var(--text-primary) 0%, var(--swift-orange) 100%);
+    --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+    --border-medium: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 80px 20px 20px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

@@ -107,13 +107,15 @@ Add `"isMap": true` and include a `mapUrl` with the embed URL from Google Maps.
 ## 📁 File Structure
 
 ```
-├── index.html          # Main HTML file
-├── styles.css          # Styling
-├── app.js              # JavaScript for rendering content
-├── links.json          # All links and community info (EDIT THIS!)
-├── assets/             # Images and logos
-│   └── swiftAhmedabad.jpg
-└── .github/workflows/  # Deployment config
+├── index.html              # Main HTML file
+├── styles.css              # Styling
+├── app.js                  # JavaScript for rendering content
+├── links.json              # Community links and info (EDIT THIS!)
+├── app.json                # SwiftTalks app details (EDIT THIS!)
+├── assets/                 # Images and logos
+│   ├── swiftAhmedabad.jpg
+│   └── SwiftTalksAssets/  # App showcase screenshots
+└── .github/workflows/      # Deployment config
     └── deploy.yml
 ```
 

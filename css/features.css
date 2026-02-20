@@ -1,0 +1,288 @@
+.app-header {
+    text-align: center;
+    padding: 40px;
+}
+
+.app-header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.app-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.app-header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+#app-description {
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+.app-store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: var(--border-subtle);
+    transition: all 0.3s ease;
+}
+
+.store-button:hover {
+    background-color: var(--card-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.store-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.app-features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.feature-card-plain {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: var(--border-medium);
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.feature-card-plain:hover {
+    background: transparent;
+    transform: none;
+    box-shadow: none;
+}
+
+.feature-image-plain {
+    flex: 0 0 auto;
+    width: 45%;
+    max-width: 350px;
+}
+
+.feature-image-plain img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+    border: 3px solid #1a1a1a;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.iphone-bezel {
+    position: relative;
+    border-radius: 44px;
+    padding: 12px;
+    background: #0a0a0a;
+    box-shadow: 
+        0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.05),
+        0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.iphone-bezel img {
+    border-radius: 34px;
+    border: none;
+    box-shadow: none;
+}
+
+.feature-content-plain {
+    flex: 1;
+    padding: 0;
+    text-align: left;
+}
+
+.feature-content-plain h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--swift-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.feature-content-plain p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.feature-card {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 0;
+    gap: 24px;
+    align-items: center;
+}
+
+.feature-image {
+    flex: 0 0 auto;
+    width: 45%;
+    max-width: 400px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--card-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.feature-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background-color: #000;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-image img {
+    transform: scale(1.02);
+}
+
+.feature-content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.feature-content p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .app-features {
+        flex-direction: column;
+        gap: 16px;
+        align-items: stretch;
+    }
+    
+    .feature-card-plain {
+        flex-direction: column;
+        text-align: left;
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .feature-image-plain {
+        width: 100%;
+        max-width: 220px;
+    }
+    
+    .iphone-bezel {
+        padding: 6px;
+    }
+    
+    .feature-content-plain {
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-features {
+        flex-direction: column;
+        gap: 12px;
+        align-items: stretch;
+    }
+    
+    .feature-card-plain {
+        flex-direction: column;
+        text-align: left;
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .feature-content-plain {
+        text-align: left;
+    }
+    
+    .feature-image-plain {
+        width: 100%;
+        max-width: 220px;
+    }
+    
+    .iphone-bezel {
+        padding: 6px;
+    }
+    
+    .app-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .app-header p {
+        font-size: 1rem;
+    }
+    
+    .app-store-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .store-button {
+        width: 100%;
+        max-width: 250px;
+        justify-content: center;
+    }
+}

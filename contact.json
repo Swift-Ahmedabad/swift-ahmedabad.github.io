@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with Swift Ahmedabad"
+  },
+  "items": [
+    {
+      "id": "speakers",
+      "title": "Call for Speakers",
+      "description": "Submit your talk proposals",
+      "url": "https://forms.gle/xJz2qssaaXnyPX9z8",
+      "icon": "checkmark"
+    },
+    {
+      "id": "sponsor",
+      "title": "Sponsor an Event",
+      "description": "Venue, food, or drinks",
+      "email": "helloswiftahmedabad@gmail.com",
+      "icon": "building"
+    },
+    {
+      "id": "inquiry",
+      "title": "General Inquiry",
+      "description": "Email us for any questions",
+      "email": "helloswiftahmedabad@gmail.com",
+      "icon": "email"
+    }
+  ]
+}

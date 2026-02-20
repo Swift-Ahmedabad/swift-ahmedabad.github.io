@@ -31,9 +31,17 @@
       "color": "#FF6B9D"
     },
     {
+      "id": "github",
+      "name": "GitHub",
+      "description": "Open source projects",
+      "url": "https://github.com/swift-ahmedabad/",
+      "icon": "github",
+      "color": "#24292e"
+    },
+    {
       "id": "whatsapp",
       "name": "WhatsApp",
-      "description": "Join our community",
+      "description": "Join our WhatsApp community",
       "url": "https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf",
       "icon": "whatsapp",
       "color": "#25D366"
@@ -49,7 +57,7 @@
     {
       "id": "aratt",
       "name": "Aratt.ai",
-      "description": "AI community",
+      "description": "New community",
       "url": "https://aratt.ai/@swift_ahmedabad",
       "icon": "aratt",
       "color": "#FACC15"
