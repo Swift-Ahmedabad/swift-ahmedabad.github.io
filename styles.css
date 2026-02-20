@@ -1,0 +1,526 @@
+:root {
+    --bg-color: #000000;
+    --card-bg: #1a1a1a;
+    --card-bg-hover: #2a2a2a;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0a0;
+    --swift-orange: #F05138;
+    --twitter-blue: #000000;
+    --linkedin-blue: #0A66C2;
+    --whatsapp-green: #25D366;
+    --instagram-gradient: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    --discord-purple: #5865F2;
+    --luma-pink: #FF6B9D;
+    --aratt-yellow: #FACC15;
+    --maps-red: #EA4335;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky Navigation Bar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.contact-button {
+    background-color: var(--aratt-yellow);
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(250, 204, 21, 0.5);
+    background-color: #fbbf24;
+}
+
+body {
+    padding: 80px 20px 20px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+}
+
+.card {
+    grid-column: span 1;
+}
+
+.maps {
+    grid-column: span 2;
+}
+
+/* Row layout for desktop - 3, 3, 2 pattern */
+@media (min-width: 769px) {
+    .bento-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .header, .footer {
+        grid-column: span 3;
+    }
+    
+    /* Cards auto-flow in 3 columns */
+    .card {
+        grid-column: span 1;
+    }
+    
+    /* Location spans 2 columns in 3-column grid */
+    .maps {
+        grid-column: span 2;
+    }
+    
+    /* Discord stays 1 column */
+    .discord {
+        grid-column: span 1;
+    }
+}
+
+.bento-item {
+    background-color: var(--card-bg);
+    border-radius: 24px;
+    padding: 24px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bento-item:hover {
+    background-color: var(--card-bg-hover);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Header */
+.header {
+    grid-column: span 4;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 16px;
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2a1a1a 100%);
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.swift-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 24px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--swift-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon-wrapper {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.card-content h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Gradient text for card titles */
+.twitter .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #8899a6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.linkedin .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #0A66C2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.luma .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #FF6B9D 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.whatsapp .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #25D366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.instagram .card-content h2 {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.aratt .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #FACC15 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.discord .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #5865F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.maps .card-content h2 {
+    background: linear-gradient(135deg, #ffffff 0%, #EA4335 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Card specific colors */
+.twitter:hover .icon-wrapper {
+    background-color: var(--twitter-blue);
+}
+
+.twitter:hover .icon-wrapper svg {
+    fill: white;
+}
+
+.linkedin:hover .icon-wrapper {
+    background-color: var(--linkedin-blue);
+}
+
+.linkedin:hover .icon-wrapper svg {
+    fill: white;
+}
+
+.luma:hover .icon-wrapper {
+    background-color: var(--luma-pink);
+}
+
+.whatsapp:hover .icon-wrapper {
+    background-color: var(--whatsapp-green);
+}
+
+.whatsapp:hover .icon-wrapper svg {
+    fill: white;
+}
+
+.instagram:hover .icon-wrapper {
+    background: var(--instagram-gradient);
+}
+
+.instagram:hover .icon-wrapper svg {
+    fill: white;
+}
+
+.aratt:hover .icon-wrapper {
+    background-color: var(--aratt-yellow);
+}
+
+.aratt:hover .icon-wrapper svg {
+    stroke: black;
+}
+
+.discord:hover .icon-wrapper {
+    background-color: var(--discord-purple);
+}
+
+.discord:hover .icon-wrapper svg {
+    fill: white;
+}
+
+.maps:hover .icon-wrapper {
+    background-color: var(--maps-red);
+}
+
+.maps:hover .icon-wrapper svg {
+    fill: white;
+}
+
+/* Map card styles */
+.maps {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.map-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.map-background iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(30%) brightness(0.7);
+    transition: filter 0.3s ease;
+}
+
+.maps:hover .map-background iframe {
+    filter: grayscale(0%) brightness(0.8);
+}
+
+.map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+    z-index: 1;
+}
+
+.map-content {
+    position: relative;
+    z-index: 2;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Footer - remove all capsule/box styling */
+.footer,
+.footer.bento-item {
+    grid-column: span 4;
+    text-align: center;
+    padding: 16px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.footer:hover,
+.footer.bento-item:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .header {
+        grid-column: span 2;
+        margin-bottom: 16px;
+    }
+    
+    .card {
+        min-height: 140px;
+        grid-column: span 1;
+    }
+    
+    .maps {
+        min-height: 140px;
+        grid-column: span 2;
+    }
+    
+    .discord {
+        grid-column: span 1;
+    }
+    
+    .footer {
+        grid-column: span 2;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .navbar-content {
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .header {
+        padding: 24px;
+        margin-bottom: 12px;
+    }
+    
+    .card {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        min-height: auto;
+        padding: 16px 20px;
+        grid-column: span 1;
+    }
+    
+    .card-content {
+        text-align: left;
+    }
+    
+    .maps {
+        min-height: 180px;
+        grid-column: span 1;
+    }
+    
+    .discord {
+        grid-column: span 1;
+    }
+    
+    .map-content {
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 20px;
+    }
+    
+    .map-content .card-content {
+        text-align: left;
+    }
+    
+    .icon-wrapper {
+        margin-bottom: 0;
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .header h1 {
+        font-size: 1.75rem;
+    }
+    
+    /* Navbar mobile styles */
+    .navbar-content {
+        padding: 10px 16px;
+    }
+    
+    .navbar-logo img {
+        height: 32px;
+        width: 32px;
+    }
+    
+    .contact-button {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+    
+    body {
+        padding-top: 60px;
+    }
+}

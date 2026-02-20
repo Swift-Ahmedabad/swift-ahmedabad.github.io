@@ -1,0 +1,76 @@
+{
+  "community": {
+    "name": "Swift Ahmedabad",
+    "tagline": "Building the Swift developer community in Ahmedabad",
+    "logo": "assets/swiftAhmedabad.jpg",
+    "email": "helloswiftahmedabad@gmail.com"
+  },
+  "links": [
+    {
+      "id": "twitter",
+      "name": "X (Twitter)",
+      "description": "Follow us for updates",
+      "url": "https://twitter.com/swift_ahmedabad",
+      "icon": "twitter",
+      "color": "#000000"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "description": "Professional network",
+      "url": "https://www.linkedin.com/company/swift-ahmedabad/",
+      "icon": "linkedin",
+      "color": "#0A66C2"
+    },
+    {
+      "id": "luma",
+      "name": "Luma",
+      "description": "Upcoming events",
+      "url": "https://lu.ma/user/swiftahmedabad",
+      "icon": "luma",
+      "color": "#FF6B9D"
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "description": "Join our community",
+      "url": "https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf",
+      "icon": "whatsapp",
+      "color": "#25D366"
+    },
+    {
+      "id": "instagram",
+      "name": "Instagram",
+      "description": "Photos & stories",
+      "url": "https://www.instagram.com/swift.ahmedabad/",
+      "icon": "instagram",
+      "color": "#E4405F"
+    },
+    {
+      "id": "aratt",
+      "name": "Aratt.ai",
+      "description": "AI community",
+      "url": "https://aratt.ai/@swift_ahmedabad",
+      "icon": "aratt",
+      "color": "#FACC15"
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "description": "Chat with us",
+      "url": "https://discord.gg/pswxUQxEny",
+      "icon": "discord",
+      "color": "#5865F2"
+    },
+    {
+      "id": "maps",
+      "name": "Location",
+      "description": "",
+      "url": "https://www.google.com/maps/@23.014505,72.5713621,13z",
+      "icon": "maps",
+      "color": "#EA4335",
+      "isMap": true,
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d58749.1030933776!2d72.5713621!3d23.014505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1707772800000!5m2!1sen!2sin"
+    }
+  ]
+}
