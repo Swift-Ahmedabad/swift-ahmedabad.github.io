@@ -112,41 +112,44 @@ function createCard(link) {
 function createStatsHTML(statsData) {
     const { year, stats } = statsData;
     
+    const statsArray = [
+        { key: 'totalEvents', value: stats.totalEvents, label: 'Events' },
+        { key: 'totalParticipants', value: stats.totalParticipants, label: 'Participants' },
+        { key: 'averageParticipants', value: stats.averageParticipants, label: 'Avg/Event' },
+        { key: 'totalSpeakers', value: stats.totalSpeakers, label: 'Speakers' },
+        { key: 'topicsCovered', value: stats.topicsCovered, label: 'Topics' },
+        { key: 'totalVenues', value: stats.totalVenues, label: 'Venues' },
+        { key: 'totalSponsors', value: stats.totalSponsors, label: 'Sponsors' }
+    ];
+    
+    const groupedStats = {};
+    statsArray.forEach(stat => {
+        if (!groupedStats[stat.value]) {
+            groupedStats[stat.value] = [];
+        }
+        groupedStats[stat.value].push(stat.key);
+    });
+    
+    const groupsWithMultiple = Object.entries(groupedStats)
+        .filter(([value, keys]) => keys.length > 1)
+        .map(([value, keys]) => ({ value: parseInt(value), keys }));
+    
     return `
         <div class="stats-card">
             <div class="stats-header">
                 <h2>Year 2025</h2>
             </div>
             <div class="stats-grid-inner">
-                <div class="stat-item">
-                    <span class="stat-number">${stats.totalEvents}</span>
-                    <span class="stat-label">Events</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.totalParticipants}</span>
-                    <span class="stat-label">Participants</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.averageParticipants}</span>
-                    <span class="stat-label">Avg/Event</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.totalSpeakers}</span>
-                    <span class="stat-label">Speakers</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.topicsCovered}</span>
-                    <span class="stat-label">Topics</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.totalVenues}</span>
-                    <span class="stat-label">Venues</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">${stats.totalSponsors}</span>
-                    <span class="stat-label">Sponsors</span>
-                </div>
+                ${statsArray.map(stat => `
+                    <div class="stat-item" data-stat-key="${stat.key}" data-stat-value="${stat.value}">
+                        <span class="stat-number">${stat.value}</span>
+                        <span class="stat-label">${stat.label}</span>
+                    </div>
+                `).join('')}
             </div>
+            ${groupsWithMultiple.length > 0 ? `
+                <p class="stats-hint">Psst! Try tapping all stats with the same number...</p>
+            ` : ''}
         </div>
     `;
 }
@@ -155,7 +158,78 @@ function createStatsHTML(statsData) {
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
     initTabs();
+    initStatsGame();
 });
+
+function initStatsGame() {
+    const statsContainer = document.getElementById('stats-container');
+    
+    statsContainer.addEventListener('click', (e) => {
+        const statItem = e.target.closest('.stat-item');
+        if (!statItem) return;
+        
+        const statValue = statItem.dataset.statValue;
+        
+        statItem.classList.toggle('stat-clicked');
+        
+        const allWithValue = document.querySelectorAll(`[data-stat-value="${statValue}"]`);
+        const clickedWithValue = document.querySelectorAll(`[data-stat-value="${statValue}"].stat-clicked`);
+        
+        if (allWithValue.length > 1 && clickedWithValue.length === allWithValue.length) {
+            triggerConfetti();
+            
+            setTimeout(() => {
+                allWithValue.forEach(item => item.classList.remove('stat-clicked'));
+            }, 2000);
+        }
+    });
+}
+
+function triggerConfetti() {
+    const colors = ['#F79918', '#000000', '#ffffff', '#FF6B6B', '#4ECDC4'];
+    const container = document.createElement('div');
+    container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;overflow:hidden;';
+    document.body.appendChild(container);
+    
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes confetti-fall {
+            0% { top: -20px; opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    for (let i = 0; i < 100; i++) {
+        const confetti = document.createElement('div');
+        const size = 6 + Math.random() * 8;
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.5;
+        const duration = 1.5 + Math.random() * 1.5;
+        const rotation = Math.random() * 720;
+        const xOffset = (Math.random() - 0.5) * 150;
+        
+        confetti.style.cssText = `
+            position:absolute;
+            width:${size}px;
+            height:${size}px;
+            background:${color};
+            left:${left}%;
+            top:-20px;
+            border-radius:${Math.random() > 0.5 ? '50%' : '2px'};
+            animation:confetti-fall ${duration}s linear ${delay}s forwards;
+            transform:translateX(${xOffset}px) rotate(${rotation}deg);
+            will-change:transform,opacity;
+        `;
+        container.appendChild(confetti);
+    }
+    
+    setTimeout(() => {
+        container.remove();
+        style.remove();
+    }, 3000);
+}
 
 function initTabs() {
     const tabButtons = document.querySelectorAll('.tab-button');
@@ -163,49 +237,50 @@ function initTabs() {
     const navbarLogoBtn = document.getElementById('navbar-logo-btn');
     const contactBtn = document.getElementById('contact-btn');
     
-    navbarLogoBtn.addEventListener('click', () => {
-        const communityTab = document.getElementById('community-tab');
+    function switchTab(tabName) {
+        const tabContents = document.querySelectorAll('.tab-content');
+        const tabButtons = document.querySelectorAll('.tab-button');
         
-        if (!communityTab.classList.contains('active')) {
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                if (content.id === 'community-tab') {
-                    content.classList.add('active');
-                }
-            });
-            
-            tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        
+        const targetContent = document.getElementById(`${tabName}-tab`);
+        const targetButton = document.querySelector(`[data-tab="${tabName}"]`);
+        
+        if (targetContent) targetContent.classList.add('active');
+        if (targetButton) targetButton.classList.add('active');
+    }
+    
+    function handleHashChange() {
+        const hash = window.location.hash.slice(1);
+        
+        if (hash.startsWith('app/')) {
+            const featureId = hash.slice(4);
+            switchTab('app');
+        } else if (hash === 'team' || hash === 'app' || hash === 'contact') {
+            switchTab(hash);
+        } else {
+            switchTab('community');
+            window.location.hash = '';
         }
+    }
+    
+    window.addEventListener('hashchange', handleHashChange);
+    
+    navbarLogoBtn.addEventListener('click', () => {
+        window.location.hash = '';
     });
     
     contactBtn.addEventListener('click', () => {
-        const contactTab = document.getElementById('contact-tab');
-        
-        tabContents.forEach(content => {
-            content.classList.remove('active');
-            if (content.id === 'contact-tab') {
-                content.classList.add('active');
-            }
-        });
-        
-        tabButtons.forEach(btn => btn.classList.remove('active'));
+        window.location.hash = 'contact';
     });
     
     tabButtons.forEach(button => {
         button.addEventListener('click', () => {
             const tabId = button.dataset.tab;
-            
-            // Update active button
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-            
-            // Update active tab content
-            tabContents.forEach(content => {
-                content.classList.remove('active');
-                if (content.id === `${tabId}-tab`) {
-                    content.classList.add('active');
-                }
-            });
+            window.location.hash = tabId;
         });
     });
+    
+    handleHashChange();
 }

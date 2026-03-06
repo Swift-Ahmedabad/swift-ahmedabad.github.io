@@ -47,6 +47,27 @@
     transform: translateY(-2px);
 }
 
+.stat-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.stat-item.stat-clicked {
+    background-color: rgba(247, 153, 24, 0.3);
+    border-color: #F79918;
+    transform: scale(1.05);
+}
+
+.stats-hint {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    opacity: 0.6;
+    font-style: italic;
+}
+
 .stat-number {
     font-size: 1.5rem;
     font-weight: 700;

@@ -17,7 +17,7 @@ async function loadAppFeatures() {
 
 function createFeatureCard(feature) {
     return `
-        <div class="feature-card-plain">
+        <div class="feature-card-plain" data-feature-id="${feature.id}">
             <div class="feature-content-plain">
                 <h3>${feature.title}</h3>
                 <p>${feature.description}</p>
@@ -32,5 +32,46 @@ function createFeatureCard(feature) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadAppFeatures();
+    loadAppFeatures().then(() => {
+        setTimeout(checkHashForFeature, 500);
+    });
+    
+    window.addEventListener('hashchange', () => {
+        setTimeout(checkHashForFeature, 100);
+    });
+    
+    document.addEventListener('click', (e) => {
+        const featureCard = e.target.closest('.feature-card-plain');
+        if (featureCard) {
+            const featureId = featureCard.dataset.featureId;
+            window.location.hash = `app/${featureId}`;
+        }
+    });
 });
+
+function checkHashForFeature() {
+    const appTab = document.getElementById('app-tab');
+    if (!appTab.classList.contains('active')) return;
+    
+    const hash = window.location.hash.slice(1);
+    if (hash.startsWith('app/')) {
+        const featureId = hash.slice(4);
+        tryHighlightAppFeature(featureId);
+    }
+}
+
+function tryHighlightAppFeature(featureId, retries = 10) {
+    const featureCard = document.querySelector(`.feature-card-plain[data-feature-id="${featureId}"]`);
+    if (featureCard) {
+        setTimeout(() => {
+            featureCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            
+            featureCard.style.boxShadow = '0 0 0 3px #F79918, 0 4px 12px rgba(0,0,0,0.15)';
+            setTimeout(() => {
+                featureCard.style.boxShadow = '';
+            }, 3000);
+        }, 200);
+    } else if (retries > 0) {
+        setTimeout(() => tryHighlightAppFeature(featureId, retries - 1), 100);
+    }
+}
