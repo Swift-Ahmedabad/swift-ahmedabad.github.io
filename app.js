@@ -259,12 +259,14 @@ function initTabs() {
             switchTab('app');
         } else if (hash === 'team' || hash === 'app' || hash === 'contact') {
             switchTab(hash);
+        } else if (hash === 'discord-collaborators') {
+            return;
         } else {
             switchTab('community');
             window.location.hash = '';
         }
     }
-    
+
     window.addEventListener('hashchange', handleHashChange);
     
     navbarLogoBtn.addEventListener('click', () => {
