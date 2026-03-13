@@ -44,26 +44,27 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: var(--card-bg);
-    color: var(--text-primary);
+    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 50%, #d9d9d9 100%);
+    color: #000000;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 16px 28px;
     border-radius: 12px;
     font-weight: 600;
-    font-size: 0.9rem;
-    border: var(--border-subtle);
+    font-size: 1rem;
+    border: none;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
 .store-button:hover {
-    background-color: var(--card-bg-hover);
+    background: linear-gradient(135deg, #ffffff 0%, #e8e8e8 50%, #cccccc 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 24px rgba(255, 255, 255, 0.25);
 }
 
 .store-icon {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     fill: currentColor;
 }
 
