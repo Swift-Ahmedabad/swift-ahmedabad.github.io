@@ -257,7 +257,7 @@ function initTabs() {
         if (hash.startsWith('app/')) {
             const featureId = hash.slice(4);
             switchTab('app');
-        } else if (hash === 'team' || hash === 'app' || hash === 'contact') {
+        } else if (hash === 'team' || hash === 'app' || hash === 'support' || hash === 'contact') {
             switchTab(hash);
         } else if (hash === 'discord-collaborators') {
             return;

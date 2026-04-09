@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SwiftTalks</title>
+    <meta name="description" content="Privacy Policy for SwiftTalks app">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <div class="navbar-left">
+                <button class="navbar-logo" id="navbar-logo-btn" aria-label="Go to Community">
+                    <img id="navbar-logo-img" src="" alt="Logo">
+                </button>
+                <div class="navbar-tabs">
+                    <a href="index.html#team" class="tab-button" data-tab="team">Team</a>
+                    <a href="index.html#app" class="tab-button" data-tab="app">SwiftTalks App</a>
+                </div>
+            </div>
+            <button id="contact-btn" class="contact-button">Contact Us</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="privacy-policy-content">
+            <header class="policy-header">
+                <h1 id="policy-title" class="gradient-text"></h1>
+                <p id="policy-subtitle"></p>
+            </header>
+
+            <main id="policy-sections" class="policy-sections">
+            </main>
+
+            <p class="last-updated">Last updated: <span id="last-updated"></span></p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact-btn').addEventListener('click', function() {
+            window.location.href = 'index.html#contact';
+        });
+
+        document.getElementById('navbar-logo-btn').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+
+        async function loadLogo() {
+            try {
+                var response = await fetch('links.json');
+                var data = await response.json();
+                var logoImg = document.getElementById('navbar-logo-img');
+                logoImg.src = data.community.logo;
+                logoImg.alt = data.community.name + ' Logo';
+            } catch (error) {
+                console.error('Error loading logo:', error);
+            }
+        }
+
+        async function loadPrivacyPolicy() {
+            try {
+                var response = await fetch('privacy-policy.json');
+                var data = await response.json();
+                
+                document.getElementById('policy-title').textContent = data.title;
+                document.getElementById('policy-subtitle').textContent = data.subtitle;
+                document.getElementById('last-updated').textContent = data.lastUpdated;
+                
+                var sectionsContainer = document.getElementById('policy-sections');
+                sectionsContainer.innerHTML = data.sections.map(function(section) {
+                    var content = section.content;
+                    content = content.replace(/\n/g, '<br>');
+                    if (content.includes('@')) {
+                        content = content.replace(/helloswiftahmedabad@gmail.com/g, 
+                            '<a href="mailto:helloswiftahmedabad@gmail.com" style="color: var(--aratt-yellow);">helloswiftahmedabad@gmail.com</a>');
+                    }
+                    content = content.replace(/\[([^\]]+)\]\(([^)]+)\)/g, 
+                        '<a href="$2" target="_blank" rel="noopener noreferrer" style="color: var(--aratt-yellow);">$1</a>');
+                    return '<section class="policy-section">' +
+                        '<h2>' + section.title + '</h2>' +
+                        '<p>' + content + '</p>' +
+                    '</section>';
+                }).join('');
+            } catch (error) {
+                console.error('Error loading privacy policy:', error);
+            }
+        }
+        
+        loadLogo();
+        loadPrivacyPolicy();
+    </script>
+</body>
+</html>
