@@ -1,0 +1,43 @@
+{
+  "title": "Privacy Policy",
+  "subtitle": "Your privacy is important to us.",
+  "sections": [
+    {
+      "title": "1. Acceptance of Terms",
+      "content": "By downloading, installing, or using SwiftTalks, you agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use the application."
+    },
+    {
+      "title": "2. Privacy and Data Collection",
+      "content": "No Personal Data Collection: SwiftTalks does not collect, store, or transmit any personal information about you. We do not track your usage, location, or any other personal data. The application operates entirely on your device without collecting user-specific information."
+    },
+    {
+      "title": "3. Analytics",
+      "content": "We are using [Firebase Analytics](https://firebase.google.com/support/privacy) for feature improvements. This helps us understand how users interact with the app so we can improve the user experience. If you have the \"Share with App Developers\" option enabled on your iOS device, Apple will share this data with us in a completely anonymised manner. This is governed by [Apple's Privacy Policy](https://www.apple.com/legal/privacy/data/en/app-store/)."
+    },
+    {
+      "title": "4. Testflight",
+      "content": "Some users will have access to SwiftTalks's beta builds through Testflight. This requires us to provide Apple with the user's Name and Email ID which is collected through a form subject to user consent. This process is subject to [Testflight's Privacy Policy](https://www.apple.com/legal/privacy/data/en/testflight/)."
+    },
+    {
+      "title": "5. Apple",
+      "content": "SwiftTalks for iOS is distributed through the App Store and therefore the use of SwiftTalks is also subject to [Apple's Privacy Policy](https://www.apple.com/legal/privacy/data/en/app-store/)."
+    },
+    {
+      "title": "6. Feedback and Issue Reporting",
+      "content": "Email Communication: When you submit feedback or report issues through the app, you have the option to provide your email address. This is used solely for the following purposes: \n• To acknowledge receipt of your feedback or issue report\n• To provide updates on the status or resolution of reported issues\n• To respond to your feedback when a response is appropriate\nYour email address is not shared with third parties and is only used to communicate with you about your specific feedback or issue report."
+    },
+    {
+      "title": "7. User Responsibilities",
+      "content": "You agree to use SwiftTalks in accordance with all applicable laws and regulations. You are responsible for maintaining the confidentiality of any information you choose to share when providing feedback."
+    },
+    {
+      "title": "8. Changes to Terms",
+      "content": "We reserve the right to modify these Terms of Use at any time. Any changes will be effective immediately upon posting the updated terms within the app. Your continued use of SwiftTalks after such changes constitutes your acceptance of the new terms."
+    },
+    {
+      "title": "9. Contact Information",
+      "content": "If you have any questions about these Terms of Use, please contact us: helloswiftahmedabad@gmail.com"
+    }
+  ],
+  "lastUpdated": "April 2026"
+}

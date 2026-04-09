@@ -19,8 +19,8 @@
                     <img id="navbar-logo-img" src="" alt="Logo">
                 </button>
                 <div class="navbar-tabs">
-                    <button class="tab-button" data-tab="team">Team</button>
-                    <button class="tab-button" data-tab="app">SwiftTalks App</button>
+                    <a href="#team" class="tab-button" data-tab="team">Team</a>
+                    <a href="#app" class="tab-button" data-tab="app">SwiftTalks App</a>
                 </div>
             </div>
             <button id="contact-btn" class="contact-button">Contact Us</button>
@@ -72,13 +72,16 @@
                     <p id="app-tagline"></p>
                     <p id="app-description"></p>
                     <div class="app-store-buttons">
+                        <a href="https://apps.apple.com/us/app/swifttalks/id6755958142" class="store-button" target="_blank">
+                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            App Store
+                        </a>
                         <a id="testflight-btn" href="" class="store-button" target="_blank">
                             <svg viewBox="0 0 24 24" class="store-icon"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
                             TestFlight
                         </a>
-                        <a href="https://discord.gg/wxnME7ue" class="contribute-button" target="_blank" rel="noopener noreferrer">
-                            <svg viewBox="0 0 24 24" class="contribute-icon"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
-                            Become a Contributor
+                        <a href="mailto:helloswiftahmedabad@gmail.com" class="support-link-button">
+                            Get Support
                         </a>
                     </div>
                 </div>
@@ -88,23 +91,46 @@
                 <!-- App features will be dynamically loaded from app.json -->
             </main>
 
-            <section id="discord-collaborators" class="discord-collaborators">
-                <div class="discord-content">
-                    <div class="discord-icon-wrapper">
-                        <svg viewBox="0 0 24 24" class="discord-icon" aria-hidden="true">
-                            <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                        </svg>
+            <div class="privacy-notice">
+                <h3>Your Privacy Matters</h3>
+                <p>We do not collect any personally identifiable user data or information. Your privacy is our priority.</p>
+                <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" class="support-link-button">
+                    View Privacy Policy
+                </a>
+            </div>
+            
+            <footer class="bento-item footer">
+                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <!-- Support Tab -->
+        <div id="support-tab" class="tab-content">
+            <header class="bento-item header app-header">
+                <div class="app-header-content">
+                    <img id="support-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png" alt="App Icon" class="app-icon">
+                    <h1 id="support-title" class="gradient-text"></h1>
+                    <p id="support-subtitle"></p>
+                    <div class="support-contact-info">
+                        <p><strong>Email:</strong> helloswiftahmedabad@gmail.com</p>
+                        <p><strong>Response time:</strong> 24–48 hours</p>
                     </div>
-                    <h2>Join Our Community</h2>
-                    <p>Want to contribute to SwiftTalks? Join our Discord server to connect with other contributors, discuss ideas, and collaborate on future features.</p>
-                    <a href="https://discord.gg/wxnME7ue" target="_blank" rel="noopener noreferrer" class="discord-join-btn">
-                        Join Discord
-                        <svg viewBox="0 0 24 24" class="external-link-icon" aria-hidden="true">
-                            <path d="M10 6v2H5v11h11v-5h2v6a1 1 0 01-1 1H4a1 1 0 01-1-1V7a1 1 0 011-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/>
-                        </svg>
-                    </a>
+                    <div class="app-store-buttons">
+                        <a id="support-contact-btn" href="mailto:helloswiftahmedabad@gmail.com" class="store-button">
+                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            Get Support
+                        </a>
+                    </div>
                 </div>
-            </section>
+            </header>
+
+            <div id="privacy-section">
+                <!-- Privacy section will be dynamically loaded from support.json -->
+            </div>
+
+            <main class="app-store-buttons" id="support-container">
+                <!-- Support buttons will be dynamically loaded from support.json -->
+            </main>
             
             <footer class="bento-item footer">
                 <p>© 2026 Swift Ahmedabad. All rights reserved.</p>

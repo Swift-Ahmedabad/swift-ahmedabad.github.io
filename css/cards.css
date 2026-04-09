@@ -290,13 +290,13 @@
     line-height: 1.5;
 }
 
-.contact-grid {
+.contact-grid, .support-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
 }
 
-.contact-card {
+.contact-card, .support-card {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -306,13 +306,13 @@
     gap: 16px;
 }
 
-.contact-card:hover {
+.contact-card:hover, .support-card:hover {
     background-color: var(--card-bg-hover);
     transform: translateY(-4px);
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
 }
 
-.contact-icon {
+.contact-icon, .support-icon-wrapper {
     width: 56px;
     height: 56px;
     display: flex;
@@ -323,20 +323,20 @@
     flex-shrink: 0;
 }
 
-.contact-icon svg {
+.contact-icon svg, .support-icon-wrapper svg {
     width: 28px;
     height: 28px;
     fill: #000;
 }
 
-.contact-info h2 {
+.contact-info h2, .support-card-content h3 {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 4px;
     color: var(--text-primary);
 }
 
-.contact-info p {
+.contact-info p, .support-card-content p {
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
@@ -464,22 +464,22 @@
         grid-template-columns: 1fr;
     }
     
-    .contact-grid {
+    .contact-grid, .support-grid {
         grid-template-columns: 1fr;
     }
     
-    .contact-card {
+    .contact-card, .support-card {
         flex-direction: row;
         padding: 16px;
         gap: 12px;
     }
     
-    .contact-icon {
+    .contact-icon, .support-icon-wrapper {
         width: 48px;
         height: 48px;
     }
     
-    .contact-icon svg {
+    .contact-icon svg, .support-icon-wrapper svg {
         width: 24px;
         height: 24px;
     }
@@ -600,5 +600,48 @@
 .contribute-icon {
     width: 20px;
     height: 20px;
+    fill: currentColor;
+}
+
+.privacy-section {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.privacy-section h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text-primary);
+}
+
+.privacy-section p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.privacy-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--aratt-yellow);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.privacy-link:hover {
+    color: #fff;
+}
+
+.external-link-icon {
+    width: 18px;
+    height: 18px;
     fill: currentColor;
 }
