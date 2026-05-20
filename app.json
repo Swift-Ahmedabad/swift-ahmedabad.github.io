@@ -1,8 +1,8 @@
 {
   "app": {
-    "name": "SwiftTalks",
+    "name": "Talks",
     "tagline": "Your companion app for Swift community events and conferences",
-    "description": "SwiftTalks is a comprehensive mobile app designed for the Swift developer community to discover, prepare, and engage with talks and conferences.",
+    "description": "Talks is a comprehensive mobile app designed for the Swift developer community to discover, prepare, and engage with talks and conferences.",
     "testFlightUrl": "https://testflight.apple.com/join/Mt4fZYTp",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png",
     "version": "1.0.0"
