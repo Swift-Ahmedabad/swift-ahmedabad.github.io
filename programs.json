@@ -1,0 +1,28 @@
+{
+  "programs": [
+    {
+      "id": "meetups",
+      "name": "Swift Meetups",
+      "description": "Talks and workshops at host company offices. Three to four talks, hands-on sessions, and networking over chai.",
+      "emoji": "🎤",
+      "stat": "Talks, demos and networking",
+      "url": "https://lu.ma/user/swiftahmedabad"
+    },
+    {
+      "id": "socials",
+      "name": "Swift Socials",
+      "description": "Informal hangouts with no agenda. Good food, good company, and the occasional WWDC watch party.",
+      "emoji": "☕",
+      "stat": "Coming soon",
+      "url": "https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf"
+    },
+    {
+      "id": "campus",
+      "name": "Swift Campus",
+      "description": "University outreach sessions introducing Swift and iOS development to students who haven't opened Xcode yet.",
+      "emoji": "🎓",
+      "stat": "Coming soon",
+      "url": "https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf"
+    }
+  ]
+}

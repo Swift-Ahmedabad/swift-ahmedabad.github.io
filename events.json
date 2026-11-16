@@ -1,0 +1,170 @@
+{
+  "subtitle": "Published gatherings from Swift Ahmedabad’s Talks archive and Luma listings. Browse Luma for new announcements.",
+  "events": [
+    {
+      "title": "Swift Ahmedabad WWDC26 Watch Party",
+      "period": "2026",
+      "status": "Past event",
+      "venue": "Ahmedabad",
+      "description": "The community came together to watch Apple's WWDC keynote and discuss the announcements.",
+      "url": "https://luma.com/b08evqjf",
+      "image": "assets/designs/wwdc-2026.jpg"
+    },
+    {
+      "title": "Swift Ahmedabad March’26 Meetup",
+      "period": "14 March 2026",
+      "status": "Past event",
+      "venue": "Aubergine Solutions Pvt. Ltd.",
+      "description": "Talks explored AI in iOS apps, Figma Code Connect, and reliable connected-device apps with Swift and BLE.",
+      "url": "https://luma.com/wyi4h6xl",
+      "date": "2026-03-14",
+      "speakerIds": [
+        "4c4b0e235f4fb05e1e393cb748237c7ace8f903203b4d0535c9e52d083bb84e3",
+        "cc63742cf8b6621a970040615f1acb66ccd16829a30a69b28f37025b168e57fa",
+        "fce5dda8559fa899e7cef563911f46dd98a319d9122afd331c018a75b3fe1c11",
+        "74fb1c39e00b710a9cff7a79484337ef98c4f2c48f7b7266414d4bed115b5904",
+        "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/10.%20Mar%2014%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad December’25 Meetup",
+      "period": "13 December 2025",
+      "status": "Past event",
+      "venue": "LJ University",
+      "description": "Sessions covered Instruments and performance tuning, Vapor, Foundation Models, accessibility, and a showcase from LJ University.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025",
+      "date": "2025-12-13",
+      "speakerIds": [
+        "ef4303918ae7619260add48d6177ae21104f43a9ba4765d3588df399587c65f5",
+        "3588d063d93824c45206c88d24c5116fdd8461aa2e14621b4daefbdbdcfd6ca4",
+        "4085d893e150311845718663a24590207bf2add1eb43d1de810d780670b6861b",
+        "ee0ff851819440f83a3bd4d85fa7110e5f325ff045ce21c3678d8d2ed5fa23bb",
+        "a26ddcb01d333e9aa97bd71245bf80b339d841e2fb0215cea868b797db5e6ffd",
+        "6fa59abf1fbdf00b37cd3dc2ccd53eae8fe651e90fddf4aa4b8c2a8b04749dc6"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad October’25 Meetup",
+      "period": "11 October 2025",
+      "status": "Past event",
+      "venue": "CricHeroes Pvt. Ltd",
+      "description": "The community shared experiences from Swift Bharat, approaches to code quality, and lessons on building connections.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/8.%20Oct%2011%2C%202025",
+      "date": "2025-10-11",
+      "speakerIds": [
+        "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94",
+        "cc63742cf8b6621a970040615f1acb66ccd16829a30a69b28f37025b168e57fa",
+        "1f60e3a3bd92805805d5ef9ac97d0faee3c07b838415470dd1e2476d133095c4"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/8.%20Oct%2011%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad July’25 Meetup",
+      "period": "19 July 2025",
+      "status": "Past event",
+      "venue": "Tuvoc Technologies",
+      "description": "A session on Xcode 26 and ChatGPT, followed by IndeHub project demos.",
+      "url": "https://luma.com/fu6yaqfs",
+      "image": "assets/designs/july-2025-meetup.jpg",
+      "date": "2025-07-19",
+      "speakerIds": [
+        "7d91600a3eef39ac250d11e9ca521aa564ca48ba1f34fa275cf2522ee1d0330e"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/7.%20Jul%2019%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad WWDC25 Watch Party",
+      "period": "9 June 2025",
+      "status": "Past event",
+      "venue": "7 Span",
+      "description": "The WWDC25 gathering included “Introduction to Keynote” and “Lessons from Launching My First App Linnk”.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/6.%20Jun%209%2C%202025",
+      "date": "2025-06-09",
+      "speakerIds": [
+        "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94",
+        "55f6549c0468cf1d90d72a5ecc0a18bbda876601e22ae6ace995c293c481e238"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/6.%20Jun%209%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad April’25 Meetup",
+      "period": "5 April 2025",
+      "status": "Past event",
+      "venue": "Pixster Studio",
+      "description": "Talks explored physics in AR, design patterns, and SOLID principles, with time for networking.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/5.%20Apr%205%2C%202025",
+      "date": "2025-04-05",
+      "speakerIds": [
+        "1b429c41922937a0f37a4a25a9689fec74924882953eb2f616ce6433e3d525b4",
+        "735490c8dbd24e64a117c6ea3cb7c05d146fd16ce026eed3a95753b6cbee8992",
+        "2596a39297c14a43c920ed16546f54054bbde9027edec8d64fc0496d56d9b785"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/5.%20Apr%205%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad February’25 Meetup",
+      "period": "15 February 2025",
+      "status": "Past event",
+      "venue": "Ahmedabad Management Association",
+      "description": "Talks covered Swift Testing, code signing and reverse engineering, Image Playground, modular apps, and the vocabulary of TCA.",
+      "url": "https://luma.com/ghp1rm2g",
+      "date": "2025-02-15",
+      "speakerIds": [
+        "3143acc062d4e0ac24af42f353fcf3ce04d29bef3b79f885368f97c32e9b6692",
+        "16221ac53c484b16916f57e7b584cd3ddabe39710c10f7cd7618c450b9969192",
+        "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94",
+        "5c7183c56e01a375f0f02c7d03dbb3f349a0f8812770a5a2771bb40a2686b3b4",
+        "74c5ad3a70cb9f43bab19b8dd305e35899af9b20bfa8dc2dc83c62a38fb95939"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/4.%20Feb%2015%2C%202025/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad December’24 Meetup",
+      "period": "21 December 2024",
+      "status": "Past event",
+      "venue": "Hyperlink InfoSystem",
+      "description": "Sessions explored SwiftData, indie development, iOS 18 Control Widgets, and dependency injection with Live Activities.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024",
+      "date": "2024-12-21",
+      "speakerIds": [
+        "9637a60405dfca1b25fcd647d1bc62e1ddda1a4ce4e37ebae9a879ad55970138",
+        "230ff89c01109982a5490402539497f6e94da4ebf025d550033977b618164a14",
+        "c54b020aeb43a49bcdbd43d08cfb1b4e0b715595004c00b75e3607ef1a0c585f",
+        "6e90d5e6c4e77f6aa6d20c5cab218aacfaa59b81abcee13709ce8481a3f00b27",
+        "04115e6c7923e797f5d1ac84243d00f132252498ddf0ed56ef6e6a7bb7fde0e6"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad October’24 Meetup",
+      "period": "19 October 2024",
+      "status": "Past event",
+      "venue": "Simform",
+      "description": "Talks covered Mesh, a plug-and-play UI framework, modern concurrency, and Apple Intelligence.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/2.%20Oct%2019%2C%202024",
+      "date": "2024-10-19",
+      "speakerIds": [
+        "0722b56981657bd0f1f4b25c1fbd6e04a06f84989448f73e1dce8db5f0f69d33",
+        "b5824bfec9f7c5eb6a5c49bde7a391a1cc92477b3a2d6704d72b4ee86a404349",
+        "2aea6d9e93a27e10843757023d7a88c3d9104bc60d1c169b1dced7e34556ba30"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/2.%20Oct%2019%2C%202024/Info.yml"
+    },
+    {
+      "title": "Swift Ahmedabad August’24 Meetup",
+      "period": "10 August 2024",
+      "status": "Past event",
+      "venue": "MobileFirst Applications - Fintegration",
+      "description": "Sessions included “Let’s Scroll” and “Revolutionizing iOS Development”.",
+      "url": "https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/1.%20Aug%2010%2C%202024",
+      "date": "2024-08-10",
+      "speakerIds": [
+        "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94",
+        "a2e1087fb9caf4408f9e6738369da1a490c51a428f837155bb4eb3f5aeaa4377"
+      ],
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/1.%20Aug%2010%2C%202024/Info.yml"
+    }
+  ]
+}

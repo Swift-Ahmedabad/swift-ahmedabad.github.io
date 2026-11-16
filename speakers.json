@@ -1,0 +1,301 @@
+{
+  "speakers": [
+    {
+      "id": "a2e1087fb9caf4408f9e6738369da1a490c51a428f837155bb4eb3f5aeaa4377",
+      "name": "Dharmesh Avaiya",
+      "about": "Senior Project Manager | Technical PM | Expert in Web, Mobile (Tablet/Wearable), Hardware Integrations (Kiosk, BLE, Beacons) & Cloud Apps | Agile & Scrum | 12+ Yrs in Global Tech Delivery",
+      "linkedIn": "https://www.linkedin.com/in/dharmesh-avaiya-google-project-management-certified-1793a244/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/1.%20Aug%2010%2C%202024/Revolutionizing%20iOS%20Development/Speaker.yml",
+      "image": "assets/speakers/DharmeshAvaiya.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/DharmeshAvaiya.jpeg",
+      "imageSha": "05ba60f29cd9a1bb55a730d97346a83e531d16a8"
+    },
+    {
+      "id": "9637a60405dfca1b25fcd647d1bc62e1ddda1a4ce4e37ebae9a879ad55970138",
+      "name": "Gaurav Harkhani",
+      "about": "iOS @ Brainvire | Swift | SwiftUI | UIKIT | MVVM | MVVM-C | Agile | Technical Contributor, Mentor & Writer | Volunteer at Swift Ahmedabad & Agile Network India",
+      "linkedIn": "https://www.linkedin.com/in/gaurav-harkhani/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/Optimizing%20development%20with%20dependency%20injection%20and%20live%20activities%20/Speaker.yml",
+      "image": "assets/speakers/GauravHarkhani.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/GauravHarkhani.png",
+      "imageSha": "986384864f41a439e83bdfccc389093edaa7e42b"
+    },
+    {
+      "id": "0722b56981657bd0f1f4b25c1fbd6e04a06f84989448f73e1dce8db5f0f69d33",
+      "name": "Gokul Nair",
+      "about": "Building the Future, One Solution at a Time",
+      "linkedIn": "https://www.linkedin.com/in/gokul-r-nair/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/2.%20Oct%2019%2C%202024/Mesh%20A%20plug%20and%20play%20ui%20framework/Speaker.yml"
+    },
+    {
+      "id": "6fa59abf1fbdf00b37cd3dc2ccd53eae8fe651e90fddf4aa4b8c2a8b04749dc6",
+      "name": "Hardik Modha",
+      "about": "iOS Developer @ Space O | Model-View-Controller (MVC) | MVVM | SwiftUI | Swift | Git | JIRA | Trello | Swift | Core Data | MVP | The Composable Architecture | Core Location | Sqlite | Flutter | GetX | MapKit",
+      "linkedIn": "https://www.linkedin.com/in/hardik-modha-95b9ab125/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/Introduction%20of%20Vapor%20framework/Speaker.yml",
+      "image": "assets/speakers/HardikModha.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/HardikModha.jpeg",
+      "imageSha": "9a6ae587a9ef78fb320069c427dd14e8e5b3a627"
+    },
+    {
+      "id": "2aea6d9e93a27e10843757023d7a88c3d9104bc60d1c169b1dced7e34556ba30",
+      "name": "Harshit Daftary",
+      "about": "Application Development Team Lead at Accenture",
+      "linkedIn": "https://www.linkedin.com/in/harshitdaftary/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/2.%20Oct%2019%2C%202024/Apple%20Intelligence/Speaker.yml",
+      "image": "assets/speakers/HarshitDaftary.jpg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/HarshitDaftary.jpg",
+      "imageSha": "f6e0af7133b26a7b780d4ac242de8e9f490f63cc"
+    },
+    {
+      "id": "735490c8dbd24e64a117c6ea3cb7c05d146fd16ce026eed3a95753b6cbee8992",
+      "name": "Hitesh Trivedi",
+      "about": "Engineering Manager | iOS Architect | Mobile Development Lead | Swift Expert | CI/CD | Mobile | iOS Development",
+      "linkedIn": "https://www.linkedin.com/in/trivedihiteshrd/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/5.%20Apr%205%2C%202025/Mastering%20Design%20patterns%20and%20Solid%20Principles/Speaker.yml",
+      "image": "assets/speakers/HiteshTrivedi.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/HiteshTrivedi.png",
+      "imageSha": "cb56c1eb929533dc19ce3d9e47f7ebf8bb899027"
+    },
+    {
+      "id": "6e90d5e6c4e77f6aa6d20c5cab218aacfaa59b81abcee13709ce8481a3f00b27",
+      "name": "Jay Kothadia",
+      "about": "iOS Developer @ CricHeroes",
+      "linkedIn": "https://www.linkedin.com/in/jay-kothadia-04122a1b2/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/iOS%2018%20Control%20Widgets/Speaker.yml",
+      "image": "assets/speakers/JayKothadia.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/JayKothadia.png",
+      "imageSha": "c15b062e38dd83201e5a1afac17b7a7d4295cd50"
+    },
+    {
+      "id": "cc63742cf8b6621a970040615f1acb66ccd16829a30a69b28f37025b168e57fa",
+      "name": "Kanishka Chaudhry",
+      "about": "SDE @ Upstox | 2x Apple Scholar | SNHU '25",
+      "linkedIn": "https://www.linkedin.com/in/kanishka-c/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/10.%20Mar%2014%2C%202025/Figma%20Code%20Connect%20For%20Swifter%20UI%20Creation/Speaker.yml",
+      "image": "assets/speakers/KanishkaChaudhry.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/KanishkaChaudhry.jpeg",
+      "imageSha": "74683a139729ea02dc424cb5469cc33d0f053823"
+    },
+    {
+      "id": "ef4303918ae7619260add48d6177ae21104f43a9ba4765d3588df399587c65f5",
+      "name": "Kushal Panchal",
+      "about": "Tech Lead at IndiaNIC Infotech Ltd who started with pixels before code. Passionate about building delightful mobile experiences and believes good design and clean code share the same DNA.",
+      "linkedIn": "https://www.linkedin.com/in/kushal211/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/Accessibility%20Nutrition%20Labels%20for%20Better%20iOS%20Apps/Speaker.yml",
+      "image": "assets/speakers/KushalPanchal.jpg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/KushalPanchal.jpg",
+      "imageSha": "4913646349e140e6cf1400bc6ecfff9a11c57bde"
+    },
+    {
+      "id": "1b429c41922937a0f37a4a25a9689fec74924882953eb2f616ce6433e3d525b4",
+      "name": "Mayur Tanna",
+      "about": "iOS Developer | Freelancer | AR | SwiftUI | Swift | Open for Freelance Opportunities",
+      "linkedIn": "https://www.linkedin.com/in/mayur-tanna-ios/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/5.%20Apr%205%2C%202025/Physics%20in%20AR/Speaker.yaml",
+      "image": "assets/speakers/MayurTanna.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/MayurTanna.png",
+      "imageSha": "7d6830a1e88aab4e86f1d89bc38f077f5e76eeb8"
+    },
+    {
+      "id": "3588d063d93824c45206c88d24c5116fdd8461aa2e14621b4daefbdbdcfd6ca4",
+      "name": "Mr. Mosam Pandya",
+      "about": "Ph.D (Pursuing), MBA, M.E, B.E, 21 years of academic experience. Having interest in Python Programming, AIML/ Data Science, Network Analysis, Magnetic Levitation.",
+      "linkedIn": "https://www.linkedin.com/in/mosampandya",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/LJUniversityShowcase/Speaker.yml",
+      "image": "assets/speakers/MosamPandya.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/MosamPandya.jpeg",
+      "imageSha": "dff7d1d39fd72224e82f892c2997150d72bdbdd4"
+    },
+    {
+      "id": "04115e6c7923e797f5d1ac84243d00f132252498ddf0ed56ef6e6a7bb7fde0e6",
+      "name": "Mustafa Yusuf",
+      "about": "Founder | Building Karo & Tasks | Passionate about consumer apps",
+      "linkedIn": "https://www.linkedin.com/in/mufasayc/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/Becoming%20an%20Indie%20Developer/Speaker.yml",
+      "image": "assets/speakers/Mustafa.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/Mustafa.jpeg",
+      "imageSha": "e656e0ac0fe85171a4fdb2c7bae21eed12ce4bbf"
+    },
+    {
+      "id": "b5824bfec9f7c5eb6a5c49bde7a391a1cc92477b3a2d6704d72b4ee86a404349",
+      "name": "Nishchal Visavadiya",
+      "about": "SDE - II @Simform Solutions | iOS - Swift | Android - Kotlin",
+      "linkedIn": "https://www.linkedin.com/in/nishchal-visavadiya/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/2.%20Oct%2019%2C%202024/Modern%20Concurrency/Speaker.yml",
+      "image": "assets/speakers/NishchalVishavadiya.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/NishchalVishavadiya.png",
+      "imageSha": "51ae2d34bfa976f672c72ac729896ea325a9e4b5"
+    },
+    {
+      "id": "fce5dda8559fa899e7cef563911f46dd98a319d9122afd331c018a75b3fe1c11",
+      "name": "Pradip Sutariya",
+      "about": "With over 10 years of experience in mobile development, I specialize in designing and delivering robust applications across the Apple ecosystem including iOS, iPad, Apple Watch (watchOS), Mac (macOS), and CarPlay as well as cross-platform solutions using Flutter for both iOS and Android. I have a proven track record of building high-quality apps that solve complex problems through smart use of algorithms, design patterns, and cutting-edge technologies.\nMy expertise extends to Bluetooth Low Energy (BLE), Swift, Swift-UI, Objective-C, and Dart, allowing me to create seamless, innovative, and reliable mobile experiences that connect users with the latest IoT and wearable technologies.\nI’m passionate about collaborating with teams and clients to turn ideas into reality, delivering mobile solutions that stand out in performance and usability.",
+      "linkedIn": "https://linkedin.com/in/pradip-sutariya-926660113",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/10.%20Mar%2014%2C%202025/Designing%20Reliable%20Connected-Device%20Apps%20with%20Swift%20and%20BLE/Speaker.yml",
+      "image": "assets/speakers/PradipSutariya.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/PradipSutariya.jpeg",
+      "imageSha": "5444b8123348a3ad3eb634da69c8ecbda2f168b3"
+    },
+    {
+      "id": "5c7183c56e01a375f0f02c7d03dbb3f349a0f8812770a5a2771bb40a2686b3b4",
+      "name": "Pran Kishor",
+      "about": "Lead Software Engineer @ EPAM Systems | iOS Developer | Community Speaker | Dev OPS Design enthusiast | AWS Business professional",
+      "linkedIn": "https://www.linkedin.com/in/pran-kishore/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/4.%20Feb%2015%2C%202025/Code%20Signing%20and%20Reverse%20Engineering/Speaker.yml",
+      "image": "assets/speakers/PranKishor.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/PranKishor.png",
+      "imageSha": "c1e66b337c569b329af456889645dbd8bf01818a"
+    },
+    {
+      "id": "7d91600a3eef39ac250d11e9ca521aa564ca48ba1f34fa275cf2522ee1d0330e",
+      "name": "Prashant Korat",
+      "about": "IOS Development | Objective C | Swift | Architecture | TDD | BDD",
+      "linkedIn": "https://www.linkedin.com/in/prashantpkorat/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/7.%20Jul%2019%2C%202025/Unlocking%20the%20Power%20of%20Xcode%2026%20%2B%20ChatGPT/Speaker.yml",
+      "image": "assets/speakers/PrashantKorat.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/PrashantKorat.jpeg",
+      "imageSha": "60e963de62925b3d996ac7ca47d3b136d9fb6b38"
+    },
+    {
+      "id": "55f6549c0468cf1d90d72a5ecc0a18bbda876601e22ae6ace995c293c481e238",
+      "name": "Pratik Gadhesariya",
+      "about": "👨‍💻 Senior iOS Developer | 📱 Creator of Linnk Stay Connected | 🚀 Dreaming big for 2025 | 💡 Tech, apps, & ideas",
+      "linkedIn": "https://www.linkedin.com/in/pratik-gadhesariya-047a14142/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/6.%20Jun%209%2C%202025/Lessons%20from%20Launching%20My%20First%20App%20Linnk/Speaker.yaml",
+      "image": "assets/speakers/PratikGadhesariya.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/PratikGadhesariya.png",
+      "imageSha": "155f3cf723d45f025d1615f9f4a8a3b8f58136ad"
+    },
+    {
+      "id": "4085d893e150311845718663a24590207bf2add1eb43d1de810d780670b6861b",
+      "name": "Prof. Tushar Thakar",
+      "about": "Internship & Placement Coordinator |Head of Mechanical Engineering Department | Software Design Trainer (SolidWorks, Ansys, MATLAB, Python) | Career Mentor & Coach | LJIET - LJ University. 9 years of academic experience.",
+      "linkedIn": "https://www.linkedin.com/in/tushar-thakar-03b936101/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/LJUniversityShowcase/Speaker.yml",
+      "image": "assets/speakers/TusharThakkar.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/TusharThakkar.jpeg",
+      "imageSha": "6d2a6ecda906a58960922fbcc7516ef562ed6753"
+    },
+    {
+      "id": "3143acc062d4e0ac24af42f353fcf3ce04d29bef3b79f885368f97c32e9b6692",
+      "name": "Rahul (RC) Chandnani",
+      "about": "Tech Lead – iOS @ CricHeroes | iOS Architect & Performance Optimizer | Passionate About Tech & Cricket",
+      "linkedIn": "https://www.linkedin.com/in/rahul-chandnani-825920a0/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/4.%20Feb%2015%2C%202025/Exploring%20Image%20Playground%20with%20Apple%20Intelligence/Speaker.yml",
+      "image": "assets/speakers/RahulChandnani.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RahulChandnani.png",
+      "imageSha": "ab1b3ae832989fa26d006bfed4befdd0a0364bee"
+    },
+    {
+      "id": "74fb1c39e00b710a9cff7a79484337ef98c4f2c48f7b7266414d4bed115b5904",
+      "name": "Rahul Parmar",
+      "about": "AWS Certified Developer- Associate || Associate Software Engineer @Aubergine Solutions Pvt. Ltd. Dharmsinh Desai University || Information and Technology",
+      "linkedIn": "https://www.linkedin.com/in/rahul--parmar/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/10.%20Mar%2014%2C%202025/Designing%20Reliable%20Connected-Device%20Apps%20with%20Swift%20and%20BLE/Speaker.yml",
+      "image": "assets/speakers/RahulParmar.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RahulParmar.jpeg",
+      "imageSha": "d454d6fb4c131bcc3c9689b13639ef9cabfe3d96"
+    },
+    {
+      "id": "d4a1a4d1495dce5806681786869bf81317ef2243d85165b42bcea57bd9412d94",
+      "name": "Ratnesh Jain",
+      "about": "Sr. iOS Engineer",
+      "linkedIn": "https://www.linkedin.com/in/ratnesh-jain-7a2270146/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/1.%20Aug%2010%2C%202024/Let%27s%20Scroll/Speaker.yml",
+      "image": "assets/speakers/RatneshJain.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RatneshJain.png",
+      "imageSha": "a1ed79fdba5a23d6f91b211d90bd084e8019cb64"
+    },
+    {
+      "id": "c54b020aeb43a49bcdbd43d08cfb1b4e0b715595004c00b75e3607ef1a0c585f",
+      "name": "Reena Thakker",
+      "about": "Senior Software Engineer (iOS)",
+      "linkedIn": "https://www.linkedin.com/in/reenathakkar77/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/Introduction%20to%20SwiftData/Speaker.yml",
+      "image": "assets/speakers/ReenaThakker.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/ReenaThakker.png",
+      "imageSha": "68fbfb17e743951a1888584303f4e68a2d15e560"
+    },
+    {
+      "id": "230ff89c01109982a5490402539497f6e94da4ebf025d550033977b618164a14",
+      "name": "Riddhi Khunti",
+      "about": "iOS | React-Native | Flutter | Swift | SwiftUI Developer",
+      "linkedIn": "https://www.linkedin.com/in/riddhikhunti-ios/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/3.%20Dec%2021%2C%202024/Optimizing%20development%20with%20dependency%20injection%20and%20live%20activities%20/Speaker.yml",
+      "image": "assets/speakers/RiddhiKunthi.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RiddhiKunthi.png",
+      "imageSha": "8b027a239cdaf7134f2e6225880deac05987a06b"
+    },
+    {
+      "id": "16221ac53c484b16916f57e7b584cd3ddabe39710c10f7cd7618c450b9969192",
+      "name": "Rimesh Jotaniya",
+      "about": "iOS Developer | Swift | UIKit | SwiftUI",
+      "linkedIn": "https://www.linkedin.com/in/recursiveswift/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/4.%20Feb%2015%2C%202025/Towards%20Modular%20Apps/Speaker.yml",
+      "image": "assets/speakers/RimeshJotaniya.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RimeshJotaniya.png",
+      "imageSha": "9273418eeceb080407847c5101bf60b9f884d858"
+    },
+    {
+      "id": "1f60e3a3bd92805805d5ef9ac97d0faee3c07b838415470dd1e2476d133095c4",
+      "name": "Rizwan Ahmed",
+      "about": "Researcher | iOS Engineer | Blogger at ohmyswift.com | Speaker | Proud husband",
+      "linkedIn": "https://www.linkedin.com/in/rizwan95/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/8.%20Oct%2011%2C%202025/From%20Lines%20Of%20Codes%20to%20Lines%20Of%20Connections/Speaker.yml",
+      "image": "assets/speakers/RizwanAhmed.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RizwanAhmed.jpeg",
+      "imageSha": "e8df31a4a8c621894f1df3296d5dabdc66e98b5a"
+    },
+    {
+      "id": "ee0ff851819440f83a3bd4d85fa7110e5f325ff045ce21c3678d8d2ed5fa23bb",
+      "name": "Rushit Rakhasiya",
+      "about": "Full-Stack Swift Developer | Co-Organizer @ Swift Mumbai | Crafting Apps & Empowering the Dev Community. iOS Engineer who speaks Swift more fluently than English. An over-optimistic believer in clean code, great design, and endless street-food.",
+      "linkedIn": "https://www.linkedin.com/in/rushit-r-757aa0167/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/Playing%20with%20Apple%E2%80%99s%20Foundation%20Models%20/Speaker.yml",
+      "image": "assets/speakers/RushitRakhasiya.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/RushitRakhasiya.jpeg",
+      "imageSha": "a1e74948fc5036028ded7a4c3157f86a3c42b980"
+    },
+    {
+      "id": "2596a39297c14a43c920ed16546f54054bbde9027edec8d64fc0496d56d9b785",
+      "name": "Samir Bagariya",
+      "about": " Sr. Software Engineer (Flutter | Dart | iOS | Swift | SwiftUi)",
+      "linkedIn": "https://www.linkedin.com/in/samir-bagariya/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/5.%20Apr%205%2C%202025/Mastering%20Design%20patterns%20and%20Solid%20Principles/Speaker.yml",
+      "image": "assets/speakers/SamirBagariya.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/SamirBagariya.png",
+      "imageSha": "cbb2a7af89b504fec767bf06f44901818eca5846"
+    },
+    {
+      "id": "74c5ad3a70cb9f43bab19b8dd305e35899af9b20bfa8dc2dc83c62a38fb95939",
+      "name": "Saumil Shah",
+      "about": "Sr. iOS Developer | Helping Startups & Agencies Build AI-Driven, High-Performing Apps That Scale 📈 | 25+ Apps | 50M+ Downloads 🌎 | 12+ Years Experience (iOS, Android, Swift, SwiftUI, Mobile Engineer)",
+      "linkedIn": "https://www.linkedin.com/in/adeptdevtips/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/4.%20Feb%2015%2C%202025/Becoming%20pro%20at%20swift-testing/Speaker.yml",
+      "image": "assets/speakers/SaumilShah.png",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/SaumilShah.png",
+      "imageSha": "3469866f76178676a3b21d95a1f50ef234aa9d19"
+    },
+    {
+      "id": "a26ddcb01d333e9aa97bd71245bf80b339d841e2fb0215cea868b797db5e6ffd",
+      "name": "Sneha Dudhat",
+      "about": "10+ Experienced iOS Team Lead @Bluepixel Technologies LLP | BLE | SwiftUI | Blogger. An iOS Architect and Swift enthusiast who believes great apps are crafted, not coded. Swift is my playground — where logic, design, and intuition converge. Over the past 8 years, I’ve built high-performance apps - including IoT-integrated solutions, and I still marvel at the moment when code transforms into an experience.",
+      "linkedIn": "https://www.linkedin.com/in/sneha-dudhat-81771862/",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/9.%20Dec%2013%2C%202025/Mastering%20Instruments%20%26%20Performance%20Tuning%20in%20Swift/Speaker.yml",
+      "image": "assets/speakers/SnehaDudhat.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/SnehaDudhat.jpeg",
+      "imageSha": "a52e85c7f4faea8fcc05ce7ee37b5c9a1fb6ea35"
+    },
+    {
+      "id": "4c4b0e235f4fb05e1e393cb748237c7ace8f903203b4d0535c9e52d083bb84e3",
+      "name": "Tiwari Vinay",
+      "about": "A software engineer with over 9 years of experience in mobile and full-cycle application development, with a strong focus on iOS and AI/ML. I currently work at TCS, Gandhinagar, where I build and contribute to scalable, real-world technology solutions. I’m passionate about creating intelligent products, mentoring aspiring developers, and sharing practical industry insights through tech talks.",
+      "linkedIn": "https://in.linkedin.com/in/vinay-tiwari-60214289",
+      "source": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad/10.%20Mar%2014%2C%202025/From%20Data%20to%20Delight%20-%20Integrating%20AI%20into%20iOS%20Applications/Speaker.yml",
+      "image": "assets/speakers/TiwariVinay.jpeg",
+      "imageSource": "https://github.com/Swift-Ahmedabad/Talks/blob/617e9de2b07eacf132da829cbbb272cc8a44bc74/.speakerAssets/TiwariVinay.jpeg",
+      "imageSha": "1516dfdd428c19c5c414e2fbde248909b24791be"
+    }
+  ]
+}

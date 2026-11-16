@@ -1,96 +1,127 @@
 {
   "app": {
-    "name": "Talks",
+    "name": "Community Talks",
     "tagline": "Your companion app for Swift community events and conferences",
-    "description": "Talks is a comprehensive mobile app designed for the Swift developer community to discover, prepare, and engage with talks and conferences.",
+    "description": "Community Talks is a comprehensive mobile app designed for the Swift developer community to discover, prepare, and engage with talks and conferences.",
     "testFlightUrl": "https://testflight.apple.com/join/Mt4fZYTp",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png",
-    "version": "1.0.0"
+    "icon": "assets/CommunityTalksAssets/community-talks-logo.png",
+    "version": "1.0.0",
+    "appStoreUrl": "https://apps.apple.com/us/app/swifttalks/id6755958142"
   },
   "features": [
     {
       "id": "talks",
-      "title": "Talks",
-      "description": "Browse and discover talks from various Swift community upcoming and past events",
-      "image": "assets/SwiftTalksAssets/1.TalksTab.jpg"
+      "title": "Home & Spotlights",
+      "description": "Discover community highlights and featured content.",
+      "image": "assets/CommunityTalksAssets/IMG_4104.jpg"
     },
     {
-      "id": "past-events",
-      "title": "Past Events",
-      "description": "Access resources, sample codes and other materials from previous talks",
-      "image": "assets/SwiftTalksAssets/6.PastEvents.jpg"
-    },
-    {
-      "id": "speakers",
-      "title": "Speaker Details",
-      "description": "View detailed profiles of speakers and their sessions",
-      "image": "assets/SwiftTalksAssets/7.SpeakerDetails.jpg"
+      "id": "recent-talks",
+      "title": "Recent Talks",
+      "description": "Explore recent talks from community events.",
+      "image": "assets/CommunityTalksAssets/IMG_4105.jpg"
     },
     {
       "id": "conferences",
-      "title": "Global Conferences",
-      "description": "Stay updated with Swift conferences from around the world",
-      "image": "assets/SwiftTalksAssets/2.GlobalConferences.jpg"
+      "title": "Speakers & Conferences",
+      "description": "Browse speaker highlights and conference listings.",
+      "image": "assets/CommunityTalksAssets/IMG_4106.jpg"
     },
     {
-      "id": "first-time-speakers",
-      "title": "Encourage First Time Speakers",
-      "description": "Resources and support for new speakers in the community",
-      "image": "assets/SwiftTalksAssets/3.EncourageFirstTimeSpeakers.jpg"
+      "id": "past-events",
+      "title": "Event Details",
+      "description": "Read an event overview and open its photo album.",
+      "image": "assets/CommunityTalksAssets/IMG_4107.jpg"
     },
     {
-      "id": "prepare",
-      "title": "Prepare Content",
-      "description": "Learn how to create and organize your talk content efficiently",
-      "image": "assets/SwiftTalksAssets/5.PrepareContent.jpg"
+      "id": "talk-details",
+      "title": "Talk Details",
+      "description": "Find talk descriptions, speakers and related resources.",
+      "image": "assets/CommunityTalksAssets/IMG_4108.jpg"
     },
     {
-      "id": "record",
-      "title": "Record & Rehearse",
-      "description": "Practice and record your talks with built-in rehearsal tools",
-      "image": "assets/SwiftTalksAssets/4.RecordRehearse.jpg"
+      "id": "speakers",
+      "title": "Speaker Profile",
+      "description": "Explore a speaker’s profile, links and talks.",
+      "image": "assets/CommunityTalksAssets/IMG_4109.jpg"
     },
     {
-      "id": "communities",
-      "title": "More Communities",
-      "description": "Discover other Swift communities across india",
-      "image": "assets/SwiftTalksAssets/8.MoreCommunities.jpg"
+      "id": "speaker-directory",
+      "title": "Speaker Directory",
+      "description": "Search and browse the speaker directory.",
+      "image": "assets/CommunityTalksAssets/IMG_4110.jpg"
     },
     {
       "id": "news",
       "title": "Latest News",
-      "description": "Stay informed with the latest Swift ecosystem news, articles, blog posts, tutorials etc.",
-      "image": "assets/SwiftTalksAssets/9.LatestNews.jpg"
+      "description": "Browse news articles and updates.",
+      "image": "assets/CommunityTalksAssets/IMG_4111.jpg"
+    },
+    {
+      "id": "first-time-speakers",
+      "title": "Speaking Guide",
+      "description": "Find guidance for preparing and delivering a talk.",
+      "image": "assets/CommunityTalksAssets/IMG_4112.jpg"
+    },
+    {
+      "id": "prepare",
+      "title": "Prepare Talk Content",
+      "description": "Plan your purpose, audience and talk content.",
+      "image": "assets/CommunityTalksAssets/IMG_4113.jpg"
+    },
+    {
+      "id": "delivery",
+      "title": "Talk Delivery",
+      "description": "Explore tips for staying relaxed and delivering a talk.",
+      "image": "assets/CommunityTalksAssets/IMG_4114.jpg"
+    },
+    {
+      "id": "stage-equipment",
+      "title": "Stage Equipment",
+      "description": "Learn about microphones and stage equipment.",
+      "image": "assets/CommunityTalksAssets/IMG_4115.jpg"
+    },
+    {
+      "id": "mic-etiquette",
+      "title": "Microphone Etiquette",
+      "description": "Read tips for using a microphone on stage.",
+      "image": "assets/CommunityTalksAssets/IMG_4116.jpg"
+    },
+    {
+      "id": "record",
+      "title": "Practice Speech",
+      "description": "Record, play back and rehearse your speech.",
+      "image": "assets/CommunityTalksAssets/IMG_4118.jpg"
     },
     {
       "id": "notifications",
-      "title": "Control Notifications",
-      "description": "Customize your notification preferences.",
-      "image": "assets/SwiftTalksAssets/10.ControlNotifications.jpg"
+      "title": "News Notifications",
+      "description": "Set news notification timing, sound and sources.",
+      "image": "assets/CommunityTalksAssets/IMG_4119.jpg"
     },
     {
       "id": "system-status",
       "title": "System Status",
-      "description": "Check the current status of apple systems",
-      "image": "assets/SwiftTalksAssets/11.SystemStatus.jpg"
+      "description": "Check the status of Apple services.",
+      "image": "assets/CommunityTalksAssets/IMG_4120.jpg"
     },
     {
       "id": "developer-status",
       "title": "Developer System Status",
-      "description": "Monitor apple developer services status",
-      "image": "assets/SwiftTalksAssets/12.DeveloperSystemStatus.jpg"
+      "description": "Check the status of Apple developer services.",
+      "image": "assets/CommunityTalksAssets/IMG_4121.jpg"
     },
     {
       "id": "releases",
       "title": "Software Releases",
-      "description": "Track the latest Apple software releases",
-      "image": "assets/SwiftTalksAssets/13.SoftwareReleases.jpg"
+      "description": "Browse Apple software releases and release notes.",
+      "image": "assets/CommunityTalksAssets/IMG_4122.jpg"
     },
     {
       "id": "roadmap",
       "title": "Roadmap",
-      "description": "View upcoming features and community roadmap",
-      "image": "assets/SwiftTalksAssets/14.Roadmap.jpg"
+      "description": "Explore planned app features and community ideas.",
+      "image": "assets/CommunityTalksAssets/IMG_4123.jpg"
     }
   ]
 }

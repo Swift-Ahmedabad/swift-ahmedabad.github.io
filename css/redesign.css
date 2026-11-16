@@ -1,0 +1,303 @@
+/* 1. Hero Description & CTAs */
+.hero-description {
+    max-width: 600px;
+    margin: 0 auto 28px;
+    text-align: center;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+.hero-ctas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.cta-primary {
+    background: var(--swift-orange);
+    color: white;
+}
+.cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(240, 81, 56, 0.4);
+}
+
+.cta-secondary {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--text-secondary);
+}
+.cta-secondary:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--text-primary);
+}
+
+/* 2. Section Titles */
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 24px;
+    line-height: 1.6;
+}
+
+/* 3. Programs Section */
+.programs-section {
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.program-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 28px 24px;
+    border: var(--border-subtle);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+.program-card:hover {
+    transform: translateY(-4px);
+    background: var(--card-bg-hover);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.program-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.program-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+}
+
+.program-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 12px;
+    flex-grow: 1;
+}
+
+.program-stat {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--swift-orange);
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .programs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 4. Connect Section */
+.connect-section {
+    margin-bottom: 32px;
+}
+
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+.connect-grid .maps {
+    grid-column: span 2;
+}
+.connect-grid .card {
+    grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+    .connect-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .connect-grid .maps {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .connect-grid {
+        grid-template-columns: 1fr;
+    }
+    .connect-grid .maps {
+        grid-column: span 1;
+    }
+    .connect-grid .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        padding: 16px;
+        gap: 16px;
+    }
+    .connect-grid .card .icon-wrapper {
+        margin-bottom: 0;
+    }
+}
+
+/* 5. Sponsors Section */
+.sponsors-section {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.sponsors-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.sponsor-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    border: var(--border-subtle);
+    transition: 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+.sponsor-card:hover {
+    background: var(--card-bg-hover);
+    transform: translateY(-2px);
+}
+
+.sponsor-number {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--swift-orange);
+    font-family: monospace;
+}
+
+.sponsor-name {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.sponsor-cta {
+    text-align: center;
+    margin-top: 16px;
+}
+
+/* 6. Rich Footer */
+.site-footer {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.footer-column h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: 0.3s;
+}
+.footer-column a:hover {
+    color: var(--text-primary);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.footer-disclaimer {
+    font-size: 0.75rem;
+    opacity: 0.5 !important;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}

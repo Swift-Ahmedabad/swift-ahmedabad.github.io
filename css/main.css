@@ -1,5 +1,6 @@
 @import url('base.css');
 @import url('navbar.css');
 @import url('layout.css');
-@import url('cards.css');
+@import url('cards.css?v=speaker-photos-1');
 @import url('features.css');
+@import url('redesign.css');

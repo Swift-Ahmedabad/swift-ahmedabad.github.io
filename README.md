@@ -1,22 +1,35 @@
-# Swift Ahmedabad - Bento Grid Page
+# Swift Ahmedabad
 
-A beautiful bento-style landing page for the Swift Ahmedabad community, featuring links to all social platforms and community resources.
+Swift Ahmedabad’s community website. Liquid Night is the homepage in `index.html`; extend this approved public-feedback version for future work. Old `designs.html` URLs forward to it, and the previous bento page is retained at `community.html`.
 
 ## 🚀 Getting Started
 
-### Setup GitHub Pages
+### GitHub Pages (existing host)
 
-1. Push this repository to GitHub
-2. Go to **Settings** > **Pages** in your repository
-3. Under "Source", select **GitHub Actions**
-4. The site will be deployed automatically on every push to `main` or `master`
+The public feedback version uses Sites for now. GitHub Pages settings and write access must be verified before updating the existing address; no deployment workflow is included.
 
-### Manual Setup (Alternative)
+### Manual GitHub Pages setup
 
 1. Go to **Settings** > **Pages**
 2. Under "Source", select **Deploy from a branch**
 3. Select `main` or `master` branch and `/ (root)` folder
 4. Click **Save**
+
+## Public feedback publishing
+
+Sites identity lives in `.openai/hosting.json`; reuse its project ID. Publish from the committed Liquid Night baseline, keeping `index.html` as the homepage. The existing GitHub Pages site remains unchanged while feedback uses Sites.
+
+Export the committed source into the dedicated Sites source checkout. Generate its static output with native copy commands:
+
+```sh
+mkdir -p dist
+cp *.html *.css *.js *.json cityscape.mjs headline-glass.mjs dist/
+cp -R assets css dist/
+```
+
+For a subsequent release, clear the generated `dist/` directory first so removed files do not survive. Use the Sites source helper to commit/push and package that source, then save and deploy the returned version with public access. `dist/` is ignored build output. Keep the four excluded root working documents outside the source export. Tracked feedback notes and retired prototype sources may remain in Git; the copy commands above exclude Markdown and inactive prototype modules from the public runtime. Never include credentials in files or Git.
+
+Checks: `node designs.check.mjs`, `node cityscape.check.mjs`, `node navigation.check.mjs` (retained bento page), and `node headline-glass.check.mjs`. Review the homepage over HTTP before publishing.
 
 ## 🎨 Features
 

@@ -1,158 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Ahmedabad</title>
-    <meta name="description" content="The official community for Swift developers in Ahmedabad. Join us for meetups, workshops, and networking.">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swift Ahmedabad · Swift developer community</title>
+<meta name="description" content="Swift Ahmedabad: meetups, workshops, community events, our team, and Community Talks for Apple-platform developers.">
+<link rel="icon" href="assets/swiftAhmedabad.jpg">
+<link rel="stylesheet" href="designs.css?v=community-talks-connect-3">
+<script src="designs.js?v=crew-profiles-1" defer></script>
+<script type="module" src="cityscape.mjs?v=10"></script>
+<script type="module" src="headline-glass.mjs?v=5"></script>
 </head>
-<body>
-    <!-- Sticky Navigation Bar -->
-    <nav class="navbar">
-        <div class="navbar-content">
-            <div class="navbar-left">
-                <button class="navbar-logo" id="navbar-logo-btn" aria-label="Go to Community">
-                    <img id="navbar-logo-img" src="" alt="Logo">
-                </button>
-                <div class="navbar-tabs">
-                    <a href="#team" class="tab-button" data-tab="team">Team</a>
-                    <a href="#app" class="tab-button" data-tab="app">Talks App</a>
-                </div>
-            </div>
-            <button id="contact-btn" class="contact-button">Contact Us</button>
-        </div>
-    </nav>
-
-    <div class="container">
-        <!-- Community Tab -->
-        <div id="community-tab" class="tab-content active">
-            <header class="bento-item header">
-                <div class="logo">
-                    <img id="community-logo" src="" alt="Community Logo" class="swift-logo">
-                </div>
-                <h1 id="community-name" class="gradient-text"></h1>
-                <p id="community-tagline"></p>
-            </header>
-
-            <div id="stats-container" class="stats-grid">
-                <!-- Stats will be dynamically loaded from stats.json -->
-            </div>
-
-            <main class="bento-grid" id="links-container">
-                <!-- Links will be dynamically loaded from links.json -->
-            </main>
-            
-            <footer class="bento-item footer">
-                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
-            </footer>
-        </div>
-
-        <!-- Team Tab -->
-        <div id="team-tab" class="tab-content">
-            <header class="bento-item header">
-                <h1 class="gradient-text">Our Team</h1>
-                <p>The amazing people behind Swift Ahmedabad</p>
-            </header>
-
-            <main class="team-grid" id="team-container">
-                <!-- Team members will be dynamically loaded from team.json -->
-            </main>
-        </div>
-
-        <!-- App Tab -->
-        <div id="app-tab" class="tab-content">
-            <header class="bento-item header app-header">
-                <div class="app-header-content">
-                    <img id="app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png" alt="App Icon" class="app-icon">
-                    <h1 id="app-name" class="gradient-text"></h1>
-                    <p id="app-tagline"></p>
-                    <p id="app-description"></p>
-                    <div class="app-store-buttons">
-                        <a href="https://apps.apple.com/us/app/swifttalks/id6755958142" class="store-button" target="_blank">
-                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                            App Store
-                        </a>
-                        <a id="testflight-btn" href="" class="store-button" target="_blank">
-                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-                            TestFlight
-                        </a>
-                        <a href="mailto:helloswiftahmedabad@gmail.com" class="support-link-button">
-                            Get Support
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <main class="app-features" id="app-features-container">
-                <!-- App features will be dynamically loaded from app.json -->
-            </main>
-
-            <div class="privacy-notice">
-                <h3>Your Privacy Matters</h3>
-                <p>We do not collect any personally identifiable user data or information. Your privacy is our priority.</p>
-                <a href="privacy-policy.html" target="_blank" rel="noopener noreferrer" class="support-link-button">
-                    View Privacy Policy
-                </a>
-            </div>
-            
-            <footer class="bento-item footer">
-                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
-            </footer>
-        </div>
-
-        <!-- Support Tab -->
-        <div id="support-tab" class="tab-content">
-            <header class="bento-item header app-header">
-                <div class="app-header-content">
-                    <img id="support-app-icon" src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/39/45/d7/3945d7f4-94ee-c1b8-a00a-0c41beed8edf/AppIcon-0-0-1x_U007epad-0-1-sRGB-85-220.png/152x152ia-80.png" alt="App Icon" class="app-icon">
-                    <h1 id="support-title" class="gradient-text"></h1>
-                    <p id="support-subtitle"></p>
-                    <div class="support-contact-info">
-                        <p><strong>Email:</strong> helloswiftahmedabad@gmail.com</p>
-                        <p><strong>Response time:</strong> 24–48 hours</p>
-                    </div>
-                    <div class="app-store-buttons">
-                        <a id="support-contact-btn" href="mailto:helloswiftahmedabad@gmail.com" class="store-button">
-                            <svg viewBox="0 0 24 24" class="store-icon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                            Get Support
-                        </a>
-                    </div>
-                </div>
-            </header>
-
-            <div id="privacy-section">
-                <!-- Privacy section will be dynamically loaded from support.json -->
-            </div>
-
-            <main class="app-store-buttons" id="support-container">
-                <!-- Support buttons will be dynamically loaded from support.json -->
-            </main>
-            
-            <footer class="bento-item footer">
-                <p>© 2026 Swift Ahmedabad. All rights reserved.</p>
-            </footer>
-        </div>
-
-        <!-- Contact Tab -->
-        <div id="contact-tab" class="tab-content">
-            <header class="bento-item header">
-                <h1 class="gradient-text"></h1>
-                <p></p>
-            </header>
-
-            <main class="contact-grid" id="contact-container">
-                <!-- Contact items will be dynamically loaded from contact.json -->
-            </main>
-        </div>
+<body data-design="glass">
+<a class="skip" href="#main">Skip to content</a>
+<!-- RETIRED THEME CHOOSER — retained for restoration
+<header class="comparison">
+ <a href="#main" class="study-label"><svg aria-hidden="true"><use href="#bird"/></svg><span>SWIFT AHMEDABAD <b>COMMUNITY · INDIA</b></span></a>
+ <div class="design-switch" role="group" aria-label="Choose a design">
+  <button data-choice="glass" aria-pressed="true"><i></i><span>01</span> Liquid Night</button>
+  <button data-choice="editorial" aria-pressed="false"><i></i><span>02</span> Open Studio</button>
+  <button data-choice="aurora" aria-pressed="false"><i></i><span>03</span> City of Swift</button>
+ </div>
+ <span class="study-hint">MEET. BUILD. SHARE.</span>
+</header>
+-->
+<div class="content-status" role="status" aria-live="polite" hidden><span>Loading community content…</span><button type="button" id="retry-content" hidden>Try again</button></div>
+<noscript><p class="content-status">Enable JavaScript to view the team, events, and community directory. You can still <a href="https://lu.ma/user/swiftahmedabad">browse our event calendar</a>.</p></noscript>
+<svg class="svg-defs" aria-hidden="true"><defs>
+ <!-- One material treatment of the master keeps every reveal registered to the same pixels. -->
+ <filter id="liquid-city-glass" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values=".1382 .4649 .0469 0 .005  .1531 .5149 .0520 0 .012  .2062 .6937 .0701 0 .043  0 0 0 1 0"/></filter>
+ <mask id="ahmedabad-logo-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="100" height="100" style="mask-type:alpha"><image href="assets/designs/ahmedabad-mark.png" width="100" height="100"/></mask>
+ <symbol id="bird" viewBox="0 0 100 100"><rect width="100" height="100" mask="url(#ahmedabad-logo-mask)"/></symbol>
+ <!-- Connect marks: existing bento brand paths; Luma from luma.com; confirmed Arattai geometry from its official producticon/arattai.svg. -->
+ <symbol id="connect-twitter" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></symbol>
+ <symbol id="connect-linkedin" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+ <symbol id="connect-luma" viewBox="0 0 133 134"><path fill="currentColor" d="M133 67C96.282 67 66.5 36.994 66.5 0c0 36.994-29.782 67-66.5 67 36.718 0 66.5 30.006 66.5 67 0-36.994 29.782-67 66.5-67"></path></symbol>
+ <symbol id="connect-github" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></symbol>
+ <symbol id="connect-whatsapp" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+ <symbol id="connect-instagram" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></symbol>
+ <symbol id="connect-aratt" viewBox="0 0 1024 1024"><path fill="gold" d="M0,512C0,269.7,0,148.6,74.6,74.3,149.3,0,270.2,0,512,0S874.7,0,949.4,74.3c74.6,74.3,74.6,195.4,74.6,437.7s0,363.4-74.6,437.7c-74.6,74.3-195.5,74.3-437.4,74.3s-362.7,0-437.4-74.3C0,875.4,0,754.3,0,512Z" /><path fill="#1a2a5a" d="M636.3,800.6s0,0,0,0c-13.7,0-27.2-3.9-39.1-11.1l-54.3-33.3c-1.1-.7-2.3-1-3.6-1H237.2c-41.5,0-75.2-33.7-75.2-75.2v-190.7c0-18.9,15.3-34.2,34.2-34.2h289.8c18.9,0,34.2,15.3,34.2,34.2s-15.3,34.2-34.2,34.2h-255.6v156.5c0,3.8,3.1,6.8,6.8,6.8h302c13.9,0,27.4,3.8,39.3,11.1l54.3,33.2c2.3,1.4,4.6,1.4,6.9.1,2.3-1.3,3.5-3.3,3.5-6v-426.7c0-3.8-3.1-6.8-6.8-6.8h-290.1c-3.8,0-6.8,3.1-6.8,6.8v60.7c0,18.9-15.3,34.2-34.2,34.2s-34.2-15.3-34.2-34.2v-60.7c0-41.5,33.7-75.2,75.2-75.2h290.1c41.5,0,75.2,33.7,75.2,75.2v426.7c0,13.9-3.8,27.5-10.9,39.2-6.7,11-16.2,20.1-27.5,26.5-11.3,6.3-24,9.7-36.9,9.7Z" /><path fill="#1a2a5a" d="M827.8,812.8c-18.9,0-34.2-15.3-34.2-34.2V245.4c0-18.9,15.3-34.2,34.2-34.2s34.2,15.3,34.2,34.2v533.3c0,18.9-15.3,34.2-34.2,34.2Z" /></symbol>
+ <symbol id="connect-discord" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028 14.09 14.09 0 001.226-1.994.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></symbol>
+ <symbol id="connect-maps" viewBox="0 0 24 24"><path d="M12 22s8-7 8-13a8 8 0 1 0-16 0c0 6 8 13 8 13Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+<!-- RETIRED OPEN STUDIO DEFINITION
+ <linearGradient id="studio-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ebb679"/><stop offset=".45" stop-color="#bf6359"/><stop offset="1" stop-color="#8d4364"/></linearGradient>
+-->
+<!-- RETIRED DECORATIVE DEFINITION
+ <symbol id="star" viewBox="0 0 100 100"><path d="m50 0 9 32 26-17-17 26 32 9-32 9 17 26-26-17-9 32-9-32-26 17 17-26L0 50l32-9-17-26 26 17Z"/></symbol>
+-->
+<!-- RETIRED DECORATIVE DEFINITION
+ <symbol id="code" viewBox="0 0 24 24"><path d="m8 5-7 7 7 7m8-14 7 7-7 7m-3-17-2 24" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+-->
+<!-- RETIRED DECORATIVE DEFINITION
+ <linearGradient id="glass-fill" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff"/><stop offset=".32" stop-color="#c7ecff"/><stop offset=".56" stop-color="#ac9bf4"/><stop offset=".76" stop-color="#ffe6ee"/><stop offset="1" stop-color="#fff"/></linearGradient>
+-->
+</defs></svg>
+<main id="main">
+<!-- Liquid Night: one registered city composition with eight independent reveals. -->
+<div class="world liquid-world" id="world-glass">
+ <nav class="liquid-nav" aria-label="Main navigation">
+  <div class="liquid-nav-inner">
+   <a class="liquid-brand" href="#liquid-top" aria-label="Swift Ahmedabad home"><svg aria-hidden="true"><use href="#bird"/></svg>Swift Ahmedabad</a>
+   <div class="liquid-nav-links">
+    <a href="#liquid-top">Home</a><a href="#glass-events">Events</a><a href="#glass-speakers">Speakers</a><a href="#glass-team">Team</a><a href="#glass-app">Community Talks</a><a class="liquid-nav-join" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join us ↗</a>
+    <details class="section-menu">
+     <summary aria-label="Navigation menu"><span class="nav-menu-icon" aria-hidden="true"></span></summary>
+     <div><a href="#liquid-top">Home</a><a href="#glass-events">Events</a><a href="#glass-speakers">Speakers</a><a href="#glass-team">Team</a><a href="#glass-app">Community Talks</a><a href="#glass-sponsors">Hosts & sponsors</a><a href="#glass-connect">Connect</a><a href="#glass-contact">Contact</a><a href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join us ↗</a><button type="button" class="city-rotation" hidden>Pause city name rotation</button></div>
+    </details>
+   </div>
+  </div>
+ </nav>
+ <section class="liquid-hero" id="liquid-top">
+  <section class="liquid-cityscape" id="liquid-city" data-cityscape data-expanded-copy="true" aria-label="Explore Ahmedabad’s landmarks">
+   <div class="liquid-hero-copy">
+    <div class="city-title">
+     <h1 aria-label="Swift Ahmedabad">Swift<span class="city-words" aria-hidden="true"><span lang="en" class="current">Ahmedabad</span><span lang="gu" hidden>અમદાવાદ</span><span lang="hi" hidden>अहमदाबाद</span></span></h1>
+    </div>
+    <p class="city-hero-subtitle">A local community for Swift and Apple-platform builders.</p><a class="liquid-button" href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Find your next meetup <span aria-hidden="true">↗</span></a>
+   </div>
+   <div class="cityscape-viewport"><div class="cityscape-stage">
+    <picture class="cityscape-master" aria-hidden="true"><source media="(max-width: 767px)" srcset="assets/designs/liquid-city-portrait-v3.webp" width="900" height="1200"><img class="cityscape-base" src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" fetchpriority="high" decoding="async"></picture>
+    <div class="cityscape-atmosphere" aria-hidden="true"></div>
+    <div class="cityscape-artwork" aria-hidden="true">
+     <div class="city-piece landmark-pol" data-artwork="pol"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-jaali" data-artwork="jaali"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-gate" data-artwork="gate"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-chabutra" data-artwork="chabutra"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-stadium" data-artwork="stadium"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-ashram" data-artwork="ashram"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-stepwell" data-artwork="stepwell"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+     <div class="city-piece landmark-bridge" data-artwork="bridge"><picture><source media="(max-width: 767px)" data-color-src="assets/designs/liquid-city-portrait-v3.webp"><img class="landmark-color" data-color-src="assets/designs/liquid-city-desktop-v3.webp" width="1672" height="941" alt="" decoding="async" hidden></picture></div>
+    </div>
+    <div class="cityscape-sheen" aria-hidden="true"></div>
+    <div class="cityscape-hotspots" role="group" aria-label="Ahmedabad landmarks" aria-describedby="cityscape-hint">
+     <div class="city-target hotspot-pol"><button class="city-hotspot" type="button" data-landmark="pol" data-title="Old-city pols" data-description="Traditional neighbourhoods bring closely grouped homes, carved facades and shared community spaces together." aria-label="Explore Old-city pols" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-jaali"><button class="city-hotspot" type="button" data-landmark="jaali" data-title="Sidi Saiyyed jaali" data-description="The Tree of Life lattice turns carved stone into a delicate pattern of intertwining branches." aria-label="Explore Sidi Saiyyed jaali" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-gate"><button class="city-hotspot" type="button" data-landmark="gate" data-title="Teen Darwaza" data-description="Three grand arches mark one of Ahmedabad’s historic gateways." aria-label="Explore Teen Darwaza" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-chabutra"><button class="city-hotspot" type="button" data-landmark="chabutra" data-title="The chabutra" data-description="These bird-feeding towers express the old city’s tradition of caring for its birds." aria-label="Explore The chabutra" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-stadium"><button class="city-hotspot" type="button" data-landmark="stadium" data-title="Narendra Modi Stadium" data-description="Motera’s cricket stadium brings Ahmedabad together around the game." aria-label="Explore Narendra Modi Stadium" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-ashram"><button class="city-hotspot" type="button" data-landmark="ashram" data-title="Sabarmati Ashram" data-description="Hriday Kunj was Gandhi’s home within the Sabarmati Ashram." aria-label="Explore Sabarmati Ashram" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-stepwell"><button class="city-hotspot" type="button" data-landmark="stepwell" data-title="Adalaj Stepwell" data-description="Near Ahmedabad, carved galleries and descending stairs lead into Adalaj’s historic stepwell." aria-label="Explore Adalaj Stepwell" aria-controls="landmark-information" aria-expanded="false"></button></div>
+     <div class="city-target hotspot-bridge"><button class="city-hotspot" type="button" data-landmark="bridge" data-title="Atal Bridge" data-description="A pedestrian bridge connects the two banks of the Sabarmati River." aria-label="Explore Atal Bridge" aria-controls="landmark-information" aria-expanded="false"></button></div>
     </div>
 
-    <script src="app.js"></script>
-    <script src="team.js"></script>
-    <script src="swift-talks.js"></script>
-    <script src="contact.js"></script>
+   </div></div>
+   <div class="cityscape-caption"><p id="cityscape-hint"><span aria-hidden="true">✧</span> Hover or tap a landmark. Let the city tell its story.</p><span>AHMEDABAD, BENEATH THE GLASS</span></div>
+   <div class="landmark-info-slot"><div class="cityscape-rest-note" aria-hidden="true"><span>PAST. PRESENT. POSSIBILITY.</span><p>Every corner has a story.<br>Find a little of yours.</p></div><div class="landmark-information" id="landmark-information" aria-labelledby="landmark-title" hidden><button type="button" data-landmark-close aria-label="Close landmark details">×</button><div><p class="landmark-eyebrow">A LITTLE OF AHMEDABAD</p><h2 id="landmark-title" data-landmark-title>Explore Ahmedabad</h2><p data-landmark-story>Hover or tap a landmark to discover its story.</p></div></div></div>
+   <p class="visually-hidden" data-landmark-announcement role="status" aria-live="polite" aria-atomic="true"></p>
+   <div class="cityscape-fallback" hidden><p>The illustration couldn’t load. Ahmedabad’s stories are still here.</p><ul><li><strong>Old-city pols</strong> — Traditional neighbourhoods bring closely grouped homes, carved facades and shared community spaces together.</li><li><strong>Sidi Saiyyed jaali</strong> — The Tree of Life lattice turns carved stone into a delicate pattern of intertwining branches.</li><li><strong>Teen Darwaza</strong> — Three grand arches mark one of Ahmedabad’s historic gateways.</li><li><strong>The chabutra</strong> — These bird-feeding towers express the old city’s tradition of caring for its birds.</li><li><strong>Narendra Modi Stadium</strong> — Motera’s cricket stadium brings Ahmedabad together around the game.</li><li><strong>Sabarmati Ashram</strong> — Hriday Kunj was Gandhi’s home within the Sabarmati Ashram.</li><li><strong>Adalaj Stepwell</strong> — Near Ahmedabad, carved galleries and descending stairs lead into Adalaj’s historic stepwell.</li><li><strong>Atal Bridge</strong> — A pedestrian bridge connects the two banks of the Sabarmati River.</li></ul></div>
+   <noscript><p class="cityscape-fallback">Sidi Saiyyed jaali · Old-city pols · Teen Darwaza · Chabutra · Narendra Modi Stadium · Sabarmati Ashram · Adalaj Stepwell · Atal Bridge. Enable JavaScript to explore their stories and natural colors.</p></noscript>
+  </section>
+
+ </section>
+
+ <section class="liquid-story" id="liquid-story" aria-label="Learn, build, belong">
+  <div class="story-pin"><div class="story-intro"><p class="liquid-kicker">SOMETHING HAPPENS WHEN WE COME TOGETHER.</p><div class="story-heading"><h2>One connection.<br><span>So many possibilities.</span></h2></div></div>
+   <div class="story-deck">
+    <article class="story-card learn-card" id="story-learn"><div class="story-symbol" aria-hidden="true">↗</div><span class="story-number">LEARN</span><h3>A fresh<br>perspective.</h3><p>Real talks. Shared knowledge.<br>Your next lightbulb moment.</p><a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Explore our meetups ↗</a></article>
+    <article class="story-card build-card" id="story-build"><div class="story-symbol" aria-hidden="true">⌘</div><span class="story-number">BUILD</span><h3>Make something<br>that matters.</h3><p>Bring a side project.<br>Leave with new possibilities.</p><a href="https://github.com/swift-ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="github">Explore our GitHub ↗</a></article>
+    <article class="story-card belong-card" id="story-belong"><div class="story-symbol" aria-hidden="true">✳</div><span class="story-number">BELONG</span><h3>Your people.<br>Your place.</h3><p>From your first line of Swift<br>to your next big idea.</p><a href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Meet the community ↗</a></article>
+   </div>
+   <div class="story-controls" role="group" aria-label="Story chapters">
+    <button type="button" data-story-step="0" aria-controls="story-learn" aria-pressed="true"><span>01</span> Learn</button>
+    <button type="button" data-story-step="1" aria-controls="story-build" aria-pressed="false"><span>02</span> Build</button>
+    <button type="button" data-story-step="2" aria-controls="story-belong" aria-pressed="false"><span>03</span> Belong</button>
+    <span class="story-scroll-hint">Scroll to explore <span aria-hidden="true">↓</span></span>
+   </div>
+  </div>
+ </section>
+
+ <section class="community-section community-events" id="glass-events"><div class="community-heading"><div><p class="community-eyebrow">FROM OUR COMMUNITY</p><h2>Good things we’ve shared.</h2></div><p>Published gatherings from Swift Ahmedabad. <a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">See the complete calendar ↗</a></p></div><div data-content="events"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section community-programs" id="glass-programs"><div class="community-heading"><div><p class="community-eyebrow">WAYS TO GET INVOLVED</p><h2>Meet. Learn. Make something.</h2></div><p>Swift meetups, social gatherings, and student outreach.</p></div><div data-content="programs"><p class="loading-copy">Loading community content…</p></div></section>
+
+
+ <section class="community-section community-app" id="glass-app"><div data-content="app"><p class="loading-copy">Loading Community Talks…</p></div></section>
+
+ <section class="community-section community-team" id="glass-team"><div class="community-heading"><div><p class="community-eyebrow">THE PEOPLE BEHIND IT</p><h2>Our community crew.</h2></div><p>Developers giving their time and sharing their knowledge. Meet everyone and visit their profiles.</p></div><div data-content="team"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section community-speakers" id="glass-speakers"><div class="community-heading"><div><p class="community-eyebrow">VOICES FROM OUR MEETUPS</p><h2>Our speakers.</h2></div><p>Speakers from published Ahmedabad events. Biographies reflect their event submissions in <a href="https://github.com/Swift-Ahmedabad/Talks/tree/617e9de2b07eacf132da829cbbb272cc8a44bc74/Swift-Ahmedabad" target="_blank" rel="noopener noreferrer">Talks</a>.</p></div><div data-content="speakers"><p class="loading-copy">Loading speaker profiles…</p></div></section>
+
+ <section class="community-section community-sponsors" id="glass-sponsors"><div class="community-heading"><div><p class="community-eyebrow">MADE POSSIBLE TOGETHER</p><h2>Our hosts & sponsors.</h2></div><p>A room, a projector, and a little generosity. Meet the hosts and sponsors who have supported our community.</p></div><div data-content="sponsors"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section community-connect" id="glass-connect"><div class="community-heading"><div><p class="community-eyebrow">STAY IN THE CONVERSATION</p><h2>Find us around the internet.</h2></div><p>Announcements, conversations, projects, and updates from the community.</p></div><div data-content="connect"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section contact-panel" id="glass-contact"><div class="community-heading"><div><p class="community-eyebrow">YOUR NEXT CONNECTION</p><h2>Let’s make it happen.</h2></div><p>Have a talk, a venue, a sponsorship offer, or a question? Reach the Swift Ahmedabad team.</p></div><div data-content="contact"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="liquid-join" id="liquid-join"><div class="join-glow"></div><p class="liquid-kicker">THE NEXT GREAT CONNECTION STARTS HERE.</p><div class="headline-glass" data-headline-glass><h2>Hello,<br><span>possibility.</span></h2></div><p>You bring the curiosity. We’ll save you a place.</p><a class="liquid-button" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join Swift Ahmedabad ↗</a><a class="liquid-secondary" href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Find your next meetup ›</a></section>
+</div>
+<!-- 02 · Open Studio: a community home inspired by Swift Pune’s layout. -->
+<!-- RETIRED EDITORIAL THEME — source retained, no active DOM or asset requests
+<div class="world mag-world" id="world-editorial" hidden>
+ <nav class="mag-nav mag-wrap" aria-label="Open Studio navigation">
+  <a class="mag-brand" href="#mag-top"><svg aria-hidden="true"><use href="#bird"/></svg><span>Swift Ahmedabad<small>Apple-platform builders · India</small></span></a>
+  <div><details class="section-menu"><summary>Explore <span aria-hidden="true">⌄</span></summary><div><a href="#mag-gatherings">Programs</a><a href="#editorial-events">Events</a><a href="#editorial-team">Our team</a><a href="#editorial-sponsors">Hosts & sponsors</a><a href="#editorial-app">Talks app</a><a href="#editorial-connect">Connect</a><a href="#editorial-contact">Contact</a></div></details><a href="#mag-gatherings">Programs</a><a href="#editorial-events">Meetups</a><a href="#editorial-team">Core team</a><a class="mag-nav-join" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join WhatsApp <span>↗</span></a></div>
+ </nav>
+ <section class="mag-hero mag-wrap" id="mag-top">
+  <div class="mag-identity"><div class="mag-logo-orbit"><svg role="img" aria-label="Swift Ahmedabad chabutra and Swift bird"><use href="#bird"/></svg></div><p>Swift <strong>Ahmedabad</strong><span>Built here. Shared with everyone.</span></p><span class="mag-identity-note">23.02° N · 72.57° E</span></div>
+  <div class="mag-intro"><p class="mag-eyebrow">// Swift · SwiftUI · Ahmedabad</p><h1>Apple-platform<br>builders.<br><span>One community.</span></h1><p data-community-description>A community of Apple-platform engineers, designers and students in Ahmedabad.</p><div class="mag-actions"><a class="mag-button" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join the WhatsApp group <span>↗</span></a><a class="mag-secondary" href="https://www.linkedin.com/company/swift-ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="linkedin">Follow on LinkedIn</a></div><ul class="mag-at-glance" aria-label="Community at a glance"><li><b>Swift</b> meetups</li><li><b>Hands-on</b> learning</li><li><b>First-time</b> speakers welcome</li><li><b>Everyone</b> belongs</li></ul></div>
+ </section>
+ <section class="community-section community-programs" id="mag-gatherings"><div class="community-heading"><div><p class="community-eyebrow">// community.programs</p><h2>A little learning.<br><span>A lot of connection.</span></h2></div><p>Talks, workshops, and conversations over chai. Explore what we run, and what we’re bringing to the community next.</p></div><div data-content="programs"><p class="loading-copy">Loading our programs…</p></div></section>
+ <section class="community-section community-events" id="editorial-events"><div class="community-heading"><div><p class="community-eyebrow">// meetups.archive</p><h2>From the <span>community.</span></h2></div><p>Some of the gatherings we’ve shared. <a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Full calendar & new announcements ↗</a></p></div><div data-content="events"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="community-section community-team" id="editorial-team"><div class="community-heading"><div><p class="community-eyebrow">// community.crew</p><h2>The people <span>behind it.</span></h2></div><p>Developers who make time for the community. Meet our crew, learn what they’re building, and connect on LinkedIn.</p></div><div data-content="team"><p class="loading-copy">Loading community content…</p></div><a class="mag-talk-link" href="https://forms.gle/xJz2qssaaXnyPX9z8" target="_blank" rel="noopener noreferrer" data-link="speak">Have something to share? Pitch your first talk ↗</a></section>
+ <section class="community-section community-sponsors" id="editorial-sponsors"><div class="community-heading"><div><p class="community-eyebrow">// hosts.history</p><h2>Good people.<br><span>Generous hosts.</span></h2></div><p>Meet the companies that have supported Swift Ahmedabad with space, hospitality, and a place to learn together.</p></div><div class="mag-hosts-layout"><aside class="mag-host-note"><p class="mag-eyebrow">a_note_to_future_hosts.swift</p><h3>Make room for<br>your local community.</h3><p>A room, a projector, and a few cups of chai can bring a whole community together.</p><p>Have a space to offer or want to support our next meetup? Tell us what you have in mind. We’ll work out the details together.</p><a class="sponsor-mail-link" href="mailto:helloswiftahmedabad@gmail.com">Let’s host something together ↗</a><small>— The Swift Ahmedabad crew</small></aside><div data-content="sponsors"><p class="loading-copy">Loading community content…</p></div></div></section>
+ <section class="community-section community-app" id="editorial-app"><div data-content="app"><p class="loading-copy">Loading the Talks app…</p></div></section>
+ <div class="community-section community-year-stats" aria-label="Community statistics"><p class="community-eyebrow">// our_community_in_<span data-year>2025</span></p><div data-content="stats"></div></div>
+ <section class="community-section community-connect" id="editorial-connect"><div class="community-heading"><div><p class="community-eyebrow">// say_hello</p><h2>Keep the <span>conversation going.</span></h2></div><p>Join the WhatsApp group for community conversations. Find events, projects, and updates across our channels.</p></div><div data-content="connect"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="community-section community-contact" id="editorial-contact"><div class="community-heading"><div><p class="community-eyebrow">// contribute</p><h2>There’s room <span>for your idea.</span></h2></div><p>Speak at a meetup, support the community, or simply say hello.</p></div><div data-content="contact"><p class="loading-copy">Loading community content…</p></div></section>
+ <footer class="mag-footer mag-wrap"><div class="mag-footer-brand"><svg aria-hidden="true"><use href="#bird"/></svg><div><strong>Swift Ahmedabad</strong><p>// Code, chai, and good company.</p></div></div><div class="mag-footer-columns"><div><h3>SHOW UP</h3><a href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">WhatsApp group ↗</a><a href="#mag-gatherings">Our programs</a><a href="#editorial-events">Meetups & events</a></div><div><h3>CONTRIBUTE</h3><a href="https://forms.gle/xJz2qssaaXnyPX9z8" target="_blank" rel="noopener noreferrer" data-link="speak">Pitch a talk ↗</a><a class="sponsor-mail-link" href="mailto:helloswiftahmedabad@gmail.com">Host a meetup</a><a href="#editorial-team">Meet the crew</a></div><div><h3>FOLLOW</h3><a href="https://www.linkedin.com/company/swift-ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="linkedin">LinkedIn ↗</a><a href="https://www.instagram.com/swift.ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="instagram">Instagram ↗</a><a href="https://github.com/swift-ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="github">GitHub ↗</a></div><div><h3>CARE</h3><a href="code-of-conduct.html">Code of conduct</a><a href="privacy-policy.html">Privacy policy</a><a href="mailto:helloswiftahmedabad@gmail.com" data-link="email">Email the team</a></div></div><div class="mag-footer-bottom"><span>Independent. Community-led.</span><span>Made in Ahmedabad · IST</span></div></footer>
+</div>
+-->
+<!-- 03 · City of Swift: an Ahmedabad landmark poster inspired by Swift Bharat. -->
+<!-- RETIRED AURORA THEME — source retained, no active DOM or asset requests
+<div class="world lounge-world" id="world-aurora" hidden>
+ <nav class="city-dock" aria-label="Quick community navigation" hidden inert>
+  <a class="city-dock-home" href="#lounge-top" aria-label="Back to the top"><svg aria-hidden="true"><use href="#bird"/></svg></a>
+  <a href="#aurora-events">Meetups</a><a href="#lounge-room">Community</a><a class="city-dock-join" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join <span aria-hidden="true">↗</span></a>
+ </nav>
+ <nav class="lounge-nav" aria-label="City of Swift navigation"><a class="lounge-brand" href="#lounge-top"><svg aria-hidden="true"><use href="#bird"/></svg><div>Swift Ahmedabad<small>CODE. CHAI. COMMUNITY.</small></div></a><div><details class="section-menu"><summary>Explore <span aria-hidden="true">⌄</span></summary><div><a href="#aurora-city">Our city</a><a href="#aurora-events">Meetups</a><a href="#aurora-team">Our crew</a><a href="#aurora-app">Talks app</a><a href="#aurora-sponsors">Hosts & sponsors</a><a href="#aurora-connect">Connect</a><a href="#aurora-contact">Contact</a></div></details><a href="#aurora-city">Our city</a><a href="#aurora-events">Meetups</a><a href="#aurora-team">The crew</a><a class="lounge-nav-join" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join WhatsApp <span>↗</span></a></div></nav>
+ <section class="lounge-hero" id="lounge-top">
+  <div class="city-heading"><p class="lounge-eyebrow">APPLE-PLATFORM BUILDERS · AMDAVADI HEARTS</p><h1><span>SWIFT</span><strong>AHMEDABAD</strong></h1><p class="city-hero-subtitle">Big ideas. Local roots. Your people.</p></div>
+  <figure class="city-art"><img src="assets/designs/ahmedabad-landmarks-dusk.png" width="1536" height="1024" fetchpriority="high" alt="Illustrated Ahmedabad city collage: Sidi Saiyyed’s Tree of Life jaali, Teen Darwaza’s three arches, a chabutra with flying swifts, old-city pol houses, Sabarmati Ashram, and the colourful Atal Bridge over the Sabarmati, with Uttarayan kites in the sky."><figcaption>OUR CITY, IN COLOUR · MADE OF STORIES</figcaption></figure>
+  <div class="city-welcome"><p>Meet the Swift community<br><strong>right here in Ahmedabad.</strong></p><div><a class="lounge-button" href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Find our next meetup <span>↗</span></a><a class="city-secondary" href="#aurora-city">Explore our city ↓</a></div><span class="city-welcome-mark" aria-hidden="true"><svg><use href="#bird"/></svg></span></div>
+ </section>
+ <section class="lounge-intro" id="aurora-city"><div><p class="lounge-eyebrow">ROOTED HERE. OPEN TO EVERYONE.</p><h2>A city with stories.<br><span>A community with ideas.</span></h2></div><div><p data-community-description>A community of Apple-platform engineers, designers and students in Ahmedabad. We meet to learn, share what we know, and grow the next generation of Swift builders in the city.</p><p class="city-description">Our artwork celebrates the places and details that make Ahmedabad feel like home.</p></div></section>
+
+ <section class="community-section community-events" id="aurora-events"><div class="community-heading"><div><p class="community-eyebrow">FROM OUR COMMUNITY</p><h2>Good things we’ve shared.</h2></div><p>Published gatherings from Swift Ahmedabad. <a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">See the complete calendar ↗</a></p></div><div data-content="events"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="lounge-room" id="lounge-room"><div class="lounge-room-heading"><p class="lounge-eyebrow">FIND YOUR WAY IN</p><h2>Meet. Build.<br><em>Make it happen.</em></h2></div><div class="lounge-explorer"><div class="lounge-tabs" role="tablist" aria-label="Ways to join the community"><button role="tab" id="tab-meet" aria-controls="room-meet" aria-selected="true" data-room="meet"><span>01</span><div>Meet the community<small>Meetups & conversations</small></div><b>↗</b></button><button role="tab" id="tab-build" aria-controls="room-build" aria-selected="false" tabindex="-1" data-room="build"><span>02</span><div>Build something<small>Projects & possibilities</small></div><b>↗</b></button><button role="tab" id="tab-share" aria-controls="room-share" aria-selected="false" tabindex="-1" data-room="share"><span>03</span><div>Share your story<small>Ideas worth sharing</small></div><b>↗</b></button></div>
+  <div class="lounge-panel" role="tabpanel" id="room-meet" aria-labelledby="tab-meet"><span class="lounge-panel-no" aria-hidden="true">01</span><p class="lounge-eyebrow">SOME THINGS ARE BETTER IN PERSON</p><h3>A familiar face.<br>A fresh perspective.</h3><p>Meet the people behind the code. Join us for Swift talks, hands-on learning, and the conversations that continue long after the last slide.</p><a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Find our next gathering <span>↗</span></a><div class="lounge-panel-bottom"><span><b data-stat="totalEvents">6</b> MEETUPS IN <b data-year>2025</b></span><span>BEGINNERS ALWAYS WELCOME</span></div></div>
+  <div class="lounge-panel" role="tabpanel" id="room-build" aria-labelledby="tab-build" hidden><span class="lounge-panel-no" aria-hidden="true">02</span><p class="lounge-eyebrow">CURIOSITY LIKES COMPANY</p><h3>A small project.<br>A shared possibility.</h3><p>Bring the idea you keep coming back to. Explore our community’s GitHub, share what you’ve learned, and find your next collaborator.</p><a href="https://github.com/swift-ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="github">See what we’re building <span>↗</span></a><div class="lounge-panel-bottom"><span>SWIFT · SWIFTUI · iOS</span><span>BUILT WITH CURIOSITY</span></div></div>
+  <div class="lounge-panel" role="tabpanel" id="room-share" aria-labelledby="tab-share" hidden><span class="lounge-panel-no" aria-hidden="true">03</span><p class="lounge-eyebrow">WE’D LOVE TO HEAR YOUR STORY</p><h3>Your experience.<br>Someone’s next idea.</h3><p>A lesson from a project. A useful trick. A question you finally answered. First talk or fiftieth, there’s room for your voice in this community.</p><a href="https://forms.gle/xJz2qssaaXnyPX9z8" target="_blank" rel="noopener noreferrer" data-link="speak">Bring your idea to the stage <span>↗</span></a><div class="lounge-panel-bottom"><span><b data-stat="totalSpeakers">16</b> SPEAKERS IN <b data-year>2025</b></span><span>EVERY PERSPECTIVE MATTERS</span></div></div>
+ </div></section>
+
+ <section class="community-section community-programs" id="aurora-programs"><div class="community-heading"><div><p class="community-eyebrow">WAYS TO GET INVOLVED</p><h2>Meet. Learn. Make something.</h2></div><p>Swift meetups, social gatherings, and student outreach.</p></div><div data-content="programs"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section community-app" id="aurora-app"><div data-content="app"><p class="loading-copy">Loading the Talks app…</p></div></section>
+
+ <section class="community-section community-team" id="aurora-team"><div class="community-heading"><div><p class="community-eyebrow">THE PEOPLE BEHIND IT</p><h2>Our community crew.</h2></div><p>Developers giving their time and sharing their knowledge. Meet everyone and connect on LinkedIn.</p></div><div data-content="team"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="lounge-ethos" id="lounge-ethos"><div><p class="lounge-eyebrow">FIRST TIME HERE?</p><h2>Come curious.<br><span>We’ll take it from there.</span></h2><svg aria-hidden="true"><use href="#bird"/></svg></div><div class="city-faq"><details open><summary>Do I need to be an experienced developer?<span aria-hidden="true">+</span></summary><p>Students, designers, first-time Swift learners, and experienced engineers are all welcome. Bring your curiosity and learn with the community.</p></details><details><summary>Where do I find the next meetup?<span aria-hidden="true">+</span></summary><p>Browse our <a href="https://lu.ma/user/swiftahmedabad" target="_blank" rel="noopener noreferrer" data-link="luma">Luma calendar ↗</a> for published dates, venues, and registration. Meetups take place at host company offices; check each listing for the details.</p></details><details><summary>Can I give my first talk here?<span aria-hidden="true">+</span></summary><p>Yes. Share a useful discovery, a lesson from your project, or an idea you’re exploring. <a href="https://forms.gle/xJz2qssaaXnyPX9z8" target="_blank" rel="noopener noreferrer" data-link="speak">Send us your talk proposal ↗</a>.</p></details><details><summary>How do we look after each other?<span aria-hidden="true">+</span></summary><p>Be respectful, generous with your knowledge, and welcoming to new people. Read our <a href="code-of-conduct.html">code of conduct ↗</a> before joining.</p></details></div></section>
+
+ <section class="community-section community-sponsors" id="aurora-sponsors"><div class="community-heading"><div><p class="community-eyebrow">MADE POSSIBLE TOGETHER</p><h2>Our hosts & sponsors.</h2></div><p>A room, a projector, and a little generosity. These are the companies that have supported our community.</p></div><div data-content="sponsors"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <div class="community-section community-year-stats" aria-label="Community statistics"><p class="community-eyebrow">OUR COMMUNITY IN <span data-year>2025</span></p><div data-content="stats"></div></div>
+
+ <section class="community-section community-connect" id="aurora-connect"><div class="community-heading"><div><p class="community-eyebrow">STAY IN THE CONVERSATION</p><h2>Find us around the internet.</h2></div><p>Announcements, conversations, projects, and updates from the community.</p></div><div data-content="connect"><p class="loading-copy">Loading community content…</p></div></section>
+
+ <section class="community-section community-contact" id="aurora-contact"><div class="community-heading"><div><p class="community-eyebrow">YOUR NEXT CONNECTION</p><h2>Let’s make it happen.</h2></div><p>Have a talk, a venue, a sponsorship offer, or a question? Reach the Swift Ahmedabad team.</p></div><div data-content="contact"><p class="loading-copy">Loading community content…</p></div></section>
+ <section class="lounge-closing"><svg aria-hidden="true"><use href="#bird"/></svg><p class="lounge-eyebrow">YOUR NEXT CHAPTER, IN GOOD COMPANY</p><h2>Code brings us together.<br><em>Ahmedabad makes it ours.</em></h2><a class="lounge-button" href="https://chat.whatsapp.com/FlZuWzMf8ak8C8yAmfRRVf" target="_blank" rel="noopener noreferrer" data-link="whatsapp">Join Swift Ahmedabad <span>↗</span></a><p>See you at the next meetup.</p></section>
+ <footer class="lounge-footer"><span>Swift Ahmedabad <small>INDEPENDENT. COMMUNITY-LED.</small></span><div><a href="#aurora-team">Our people</a><a href="https://www.instagram.com/swift.ahmedabad/" target="_blank" rel="noopener noreferrer" data-link="instagram">Instagram ↗</a><a href="code-of-conduct.html">Code of conduct</a></div><span>MADE IN AMDAVAD. MADE FOR EVERYONE.</span></footer>
+</div>
+-->
+</main>
+<dialog class="profile-dialog" id="profile-dialog" aria-labelledby="profile-dialog-name">
+ <header><div data-profile-avatar aria-hidden="true"></div><h2 id="profile-dialog-name" data-profile-name tabindex="-1"></h2><button type="button" data-profile-close aria-label="Close biography">×</button></header>
+ <div class="profile-dialog-body" data-profile-bio tabindex="0" role="region" aria-label="Biography"></div>
+ <footer><a data-profile-link target="_blank" rel="noopener noreferrer">Connect on LinkedIn ↗</a></footer>
+</dialog>
+<footer class="liquid-footer">
+ <span>Swift Ahmedabad</span>
+ <div><a href="code-of-conduct.html">Code of conduct</a><a href="privacy-policy.html">Privacy policy</a><a href="mailto:helloswiftahmedabad@gmail.com" data-link="email">Email us</a></div>
+ <span class="footer-credits">
+  <span>Design &amp; Build by <a class="footer-credit-link" href="https://abhishek-patel-in.github.io/" target="_blank" rel="noopener noreferrer">Abhishek Patel</a></span>
+  <span>Development Assistance by <a class="footer-credit-link" href="https://www.linkedin.com/in/ratnesh-jain-7a2270146/" target="_blank" rel="noopener noreferrer">Ratnesh Jain</a></span>
+ </span>
+ <p>Swift Ahmedabad is an independent, community-run group. Apple and Swift are trademarks of Apple Inc.</p>
+</footer>
 </body>
 </html>

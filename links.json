@@ -2,6 +2,7 @@
   "community": {
     "name": "Swift Ahmedabad",
     "tagline": "Building the Swift developer community in Ahmedabad",
+    "description": "A community of Apple-platform engineers, designers and students in Ahmedabad. We meet to learn, share what we know, and grow the next generation of Swift builders in the city.",
     "logo": "assets/swiftAhmedabad.jpg",
     "email": "helloswiftahmedabad@gmail.com"
   },

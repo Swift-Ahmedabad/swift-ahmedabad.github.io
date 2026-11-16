@@ -1,6 +1,6 @@
 async function loadAppFeatures() {
     try {
-        const appResponse = await fetch('app.json');
+        const appResponse = await fetch('app.json', {cache: 'no-cache'});
         const appData = await appResponse.json();
         
         document.getElementById('app-name').textContent = appData.app.name;

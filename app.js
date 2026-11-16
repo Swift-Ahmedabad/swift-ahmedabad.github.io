@@ -13,52 +13,92 @@ const icons = {
 
 async function loadContent() {
     try {
-        // Load links.json
-        const linksResponse = await fetch('links.json');
+        const [linksResponse, appResponse] = await Promise.all([
+            fetch('links.json'),
+            fetch('app.json', {cache: 'no-cache'})
+        ]);
+        
         const linksData = await linksResponse.json();
+        const appData = await appResponse.json();
         
         // Render community info
         document.getElementById('community-name').textContent = linksData.community.name;
-        document.getElementById('community-tagline').textContent = linksData.community.tagline;
+        document.getElementById('community-description').textContent = linksData.community.description || "A community of Apple-platform engineers, designers and students in Ahmedabad. We meet to learn, share what we know, and grow the next generation of Swift builders in the city.";
         document.getElementById('community-logo').src = linksData.community.logo;
         document.getElementById('community-logo').alt = linksData.community.name + ' Logo';
         document.getElementById('navbar-logo-img').src = linksData.community.logo;
         document.getElementById('navbar-logo-img').alt = linksData.community.name + ' Logo';
         document.title = linksData.community.name;
-        
-        // Load stats.json
-        const statsResponse = await fetch('stats.json');
-        const statsData = await statsResponse.json();
-        
-        // Render stats
-        const statsContainer = document.getElementById('stats-container');
-        statsContainer.innerHTML = createStatsHTML(statsData);
+
+        // Set Hero CTAs
+        const whatsappLink = linksData.links.find(l => l.id === 'whatsapp');
+        const lumaLink = linksData.links.find(l => l.id === 'luma');
+        if (whatsappLink) document.getElementById('hero-cta-primary').href = whatsappLink.url;
+        if (lumaLink) document.getElementById('hero-cta-secondary').href = lumaLink.url;
         
         // Render links
         const container = document.getElementById('links-container');
         container.innerHTML = linksData.links.map(link => createCard(link)).join('');
-        
-        // Load team.json
-        // (Now loaded in team.js)
-        
-        // Load app.json
-        const appResponse = await fetch('app.json');
-        const appData = await appResponse.json();
         
         // Render app info
         document.getElementById('app-name').textContent = appData.app.name;
         document.getElementById('app-tagline').textContent = appData.app.tagline;
         document.getElementById('app-description').textContent = appData.app.description;
         document.getElementById('testflight-btn').href = appData.app.testFlightUrl;
-        document.getElementById('app-icon').src = appData.app.icon;
-        
-        // Render app features
-        // (Now loaded in swift-talks.js)
+        for (const id of ['app-icon', 'support-app-icon']) {
+            const icon = document.getElementById(id);
+            icon.src = appData.app.icon;
+            icon.alt = `${appData.app.name} app icon`;
+        }
         
     } catch (error) {
         console.error('Error loading content:', error);
         document.getElementById('links-container').innerHTML = '<p style="text-align: center; color: #888;">Error loading links. Please try again later.</p>';
     }
+}
+
+async function loadPrograms() {
+    try {
+        const response = await fetch('programs.json');
+        const data = await response.json();
+        const container = document.getElementById('programs-container');
+        container.innerHTML = data.programs.map(createProgramCard).join('');
+    } catch (error) {
+        console.error('Error loading programs:', error);
+    }
+}
+
+function createProgramCard(program) {
+    return `
+        <a href="${program.url}" target="_blank" rel="noopener noreferrer" class="program-card">
+            <div class="program-icon">${program.emoji}</div>
+            <h3>${program.name}</h3>
+            <p>${program.description}</p>
+            <span class="program-stat">${program.stat}</span>
+        </a>
+    `;
+}
+
+async function loadSponsors() {
+    try {
+        const response = await fetch('sponsors.json');
+        const data = await response.json();
+        document.getElementById('sponsors-subtitle').textContent = data.subtitle;
+        const container = document.getElementById('sponsors-container');
+        container.innerHTML = data.sponsors.map(createSponsorCard).join('');
+    } catch (error) {
+        console.error('Error loading sponsors:', error);
+    }
+}
+
+function createSponsorCard(sponsor) {
+    const href = sponsor.url || '#';
+    return `
+        <a href="${href}" target="_blank" rel="noopener noreferrer" class="sponsor-card">
+            <span class="sponsor-number">S${String(sponsor.number).padStart(3, '0')}</span>
+            <span class="sponsor-name">${sponsor.name}</span>
+        </a>
+    `;
 }
 
 function createCard(link) {
@@ -109,146 +149,37 @@ function createCard(link) {
     `;
 }
 
-function createStatsHTML(statsData) {
-    const { year, stats } = statsData;
-    
-    const statsArray = [
-        { key: 'totalEvents', value: stats.totalEvents, label: 'Events' },
-        { key: 'totalParticipants', value: stats.totalParticipants, label: 'Participants' },
-        { key: 'averageParticipants', value: stats.averageParticipants, label: 'Avg/Event' },
-        { key: 'totalSpeakers', value: stats.totalSpeakers, label: 'Speakers' },
-        { key: 'topicsCovered', value: stats.topicsCovered, label: 'Topics' },
-        { key: 'totalVenues', value: stats.totalVenues, label: 'Venues' },
-        { key: 'totalSponsors', value: stats.totalSponsors, label: 'Sponsors' }
-    ];
-    
-    const groupedStats = {};
-    statsArray.forEach(stat => {
-        if (!groupedStats[stat.value]) {
-            groupedStats[stat.value] = [];
-        }
-        groupedStats[stat.value].push(stat.key);
-    });
-    
-    const groupsWithMultiple = Object.entries(groupedStats)
-        .filter(([value, keys]) => keys.length > 1)
-        .map(([value, keys]) => ({ value: parseInt(value), keys }));
-    
-    return `
-        <div class="stats-card">
-            <div class="stats-header">
-                <h2>Year 2025</h2>
-            </div>
-            <div class="stats-grid-inner">
-                ${statsArray.map(stat => `
-                    <div class="stat-item" data-stat-key="${stat.key}" data-stat-value="${stat.value}">
-                        <span class="stat-number">${stat.value}</span>
-                        <span class="stat-label">${stat.label}</span>
-                    </div>
-                `).join('')}
-            </div>
-            ${groupsWithMultiple.length > 0 ? `
-                <p class="stats-hint">Psst! Try tapping all stats with the same number...</p>
-            ` : ''}
-        </div>
-    `;
-}
-
 // Load content when page loads
 document.addEventListener('DOMContentLoaded', () => {
     loadContent();
+    loadPrograms();
+    loadSponsors();
     initTabs();
-    initStatsGame();
 });
 
-function initStatsGame() {
-    const statsContainer = document.getElementById('stats-container');
-    
-    statsContainer.addEventListener('click', (e) => {
-        const statItem = e.target.closest('.stat-item');
-        if (!statItem) return;
-        
-        const statValue = statItem.dataset.statValue;
-        
-        statItem.classList.toggle('stat-clicked');
-        
-        const allWithValue = document.querySelectorAll(`[data-stat-value="${statValue}"]`);
-        const clickedWithValue = document.querySelectorAll(`[data-stat-value="${statValue}"].stat-clicked`);
-        
-        if (allWithValue.length > 1 && clickedWithValue.length === allWithValue.length) {
-            triggerConfetti();
-            
-            setTimeout(() => {
-                allWithValue.forEach(item => item.classList.remove('stat-clicked'));
-            }, 2000);
-        }
-    });
-}
-
-function triggerConfetti() {
-    const colors = ['#F79918', '#000000', '#ffffff', '#FF6B6B', '#4ECDC4'];
-    const container = document.createElement('div');
-    container.style.cssText = 'position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;overflow:hidden;';
-    document.body.appendChild(container);
-    
-    const style = document.createElement('style');
-    style.textContent = `
-        @keyframes confetti-fall {
-            0% { top: -20px; opacity: 1; }
-            100% { top: 100%; opacity: 0; }
-        }
-    `;
-    document.head.appendChild(style);
-    
-    for (let i = 0; i < 100; i++) {
-        const confetti = document.createElement('div');
-        const size = 6 + Math.random() * 8;
-        const color = colors[Math.floor(Math.random() * colors.length)];
-        const left = Math.random() * 100;
-        const delay = Math.random() * 0.5;
-        const duration = 1.5 + Math.random() * 1.5;
-        const rotation = Math.random() * 720;
-        const xOffset = (Math.random() - 0.5) * 150;
-        
-        confetti.style.cssText = `
-            position:absolute;
-            width:${size}px;
-            height:${size}px;
-            background:${color};
-            left:${left}%;
-            top:-20px;
-            border-radius:${Math.random() > 0.5 ? '50%' : '2px'};
-            animation:confetti-fall ${duration}s linear ${delay}s forwards;
-            transform:translateX(${xOffset}px) rotate(${rotation}deg);
-            will-change:transform,opacity;
-        `;
-        container.appendChild(confetti);
-    }
-    
-    setTimeout(() => {
-        container.remove();
-        style.remove();
-    }, 3000);
-}
-
 function initTabs() {
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
     const navbarLogoBtn = document.getElementById('navbar-logo-btn');
     const contactBtn = document.getElementById('contact-btn');
+    const menu = document.querySelector('.navbar-menu');
     
     function switchTab(tabName) {
         const tabContents = document.querySelectorAll('.tab-content');
         const tabButtons = document.querySelectorAll('.tab-button');
         
         tabContents.forEach(content => content.classList.remove('active'));
-        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabButtons.forEach(btn => {
+            btn.classList.remove('active');
+            btn.removeAttribute('aria-current');
+        });
         
         const targetContent = document.getElementById(`${tabName}-tab`);
-        const targetButton = document.querySelector(`[data-tab="${tabName}"]`);
+        const targetButtons = document.querySelectorAll(`[data-tab="${tabName}"]`);
         
         if (targetContent) targetContent.classList.add('active');
-        if (targetButton) targetButton.classList.add('active');
+        targetButtons.forEach(btn => {
+            btn.classList.add('active');
+            btn.setAttribute('aria-current', 'page');
+        });
     }
     
     function handleHashChange() {
@@ -257,7 +188,7 @@ function initTabs() {
         if (hash.startsWith('app/')) {
             const featureId = hash.slice(4);
             switchTab('app');
-        } else if (hash === 'team' || hash === 'app' || hash === 'support' || hash === 'contact') {
+        } else if (hash === 'team' || hash === 'speakers' || hash === 'app' || hash === 'support' || hash === 'contact') {
             switchTab(hash);
         } else if (hash === 'discord-collaborators') {
             return;
@@ -277,11 +208,13 @@ function initTabs() {
         window.location.hash = 'contact';
     });
     
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const tabId = button.dataset.tab;
-            window.location.hash = tabId;
-        });
+    document.addEventListener('click', event => {
+        if (menu.open && (event.target.closest('.navbar-menu a') || !menu.contains(event.target))) menu.open = false;
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key !== 'Escape' || !menu.open) return;
+        menu.open = false;
+        menu.querySelector('summary').focus();
     });
     
     handleHashChange();

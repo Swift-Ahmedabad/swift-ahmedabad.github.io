@@ -1,0 +1,90 @@
+{
+  "subtitle": "Meet the hosts and sponsors who support our gatherings. Every meetup runs on someone's generosity — a room, a projector, chai and snacks.",
+  "sponsors": [
+    {
+      "number": 1,
+      "name": "Hyperlink Infosystem",
+      "url": "https://www.hyperlinkinfosystem.com/",
+      "logo": "assets/sponsors/hyperlink-infosystem.svg",
+      "logoSource": "https://www.hyperlinkinfosystem.com/assets/img/logo.svg",
+      "logoSha256": "e8170df5d704b126714af659d7db410945c9576a293d18bf712ee1af3bcd18e7"
+    },
+    {
+      "number": 2,
+      "name": "Simform",
+      "url": "https://www.simform.com/",
+      "logo": "assets/sponsors/simform.svg",
+      "logoSource": "https://www.simform.com/wp-content/uploads/2024/12/simform-logo.svg",
+      "logoSha256": "b53b3646e478712301b39f988d8bbe23783a7571050275f6cea6bef7901b9da9"
+    },
+    {
+      "number": 3,
+      "name": "eClinicalWorks",
+      "url": "https://www.eclinicalworks.com/",
+      "logo": "assets/sponsors/eclinicalworks.png",
+      "logoSource": "https://www.eclinicalworks.com/wp-content/uploads/2014/08/main-logo.png",
+      "logoSha256": "6b9bb06fbe5c39324db83004d2b2f3845f1477fb78a5c2c5a77d5c8c7348e1b1"
+    },
+    {
+      "number": 4,
+      "name": "7Span",
+      "url": "https://www.7span.com/",
+      "logo": "assets/sponsors/7span.svg",
+      "logoSource": "https://7span-website.b-cdn.net/be082e99-8711-4293-b716-4b3da8c6dd29.svg?format=webp&quality=80",
+      "logoSha256": "adacefad8f28a164a808496cbb1841ca1a24b3a70c0a6e2795b596b7b479a264"
+    },
+    {
+      "number": 5,
+      "name": "Canopas",
+      "url": "https://www.canopas.com/",
+      "logo": "assets/sponsors/canopas.svg",
+      "logoSource": "https://canopas.com/_nuxt/logo-header.XLxl6ncU.svg",
+      "logoSha256": "adf415069dd7455786b617e6626144646d311bb63b4361c5d88a34dad79696c7"
+    },
+    {
+      "number": 6,
+      "name": "Space-O Technologies",
+      "url": "https://www.spaceotechnologies.com/",
+      "logo": "assets/sponsors/space-o-technologies.svg",
+      "logoSource": "https://www.spaceotechnologies.com/wp-content/uploads/2023/07/Spaceo-Logo-Dark-Green.svg",
+      "logoSha256": "0d155a29ff54dbb0e652916065a0f0b68357a0c26075944b384c037610cf6c5e"
+    },
+    {
+      "number": 7,
+      "name": "Pixster Studio",
+      "url": "https://www.pixsterstudio.com",
+      "logo": "assets/sponsors/pixster-studio.png",
+      "logoSource": "https://framerusercontent.com/images/R10w8Vh6rfFVqebuG7mzchT8v4.png",
+      "logoSha256": "9c3386e50381ce863924ab7a32b56d085cdbf116ab84176d41ab0988f45c1055"
+    },
+    {
+      "number": 8,
+      "name": "Tuvoc Technologies Private Limited",
+      "url": "https://www.tuvoc.com",
+      "logo": "assets/sponsors/tuvoc.svg",
+      "logoSource": "https://cdn-goikkpb.nitrocdn.com/mRnIZooCJcaJjGTGeKAtrYevSYKNmXVS/assets/images/source/rev-f52a318/www.tuvoc.com/wp-content/uploads/2025/06/Logo-2.svg",
+      "logoSha256": "866ee103c8825b1ead408ed4871ea55624eaadd4a287f665970295c0d2ccd2ff"
+    },
+    {
+      "number": 9,
+      "name": "LJ University",
+      "url": "https://ljku.edu.in",
+      "logo": "assets/sponsors/lj-university.png",
+      "logoSource": "https://ljku.edu.in/web/image/res.company/1/logo",
+      "logoSha256": "794e9e1a5bf95d0a0900e01439c8c8005a368addb35fbe30094377cf03585439"
+    },
+    {
+      "number": 10,
+      "name": "Aubergine Solutions Pvt. Ltd",
+      "url": "https://www.aubergine.co",
+      "logo": "assets/sponsors/aubergine-solutions.svg",
+      "logoSource": "https://cdn.prod.website-files.com/6706802514ffa549d0bf0b7e/67495000c9a162229994c586_Aub%20Logo.svg",
+      "logoSha256": "2eaff28e27a15985d06b89c5132a81f7e1ad86d1fcd22038f825f56c3c393d16"
+    },
+    {
+      "number": 11,
+      "name": "Your company?",
+      "url": "mailto:helloswiftahmedabad@gmail.com?subject=Host%20Swift%20Ahmedabad%20at%20our%20company"
+    }
+  ]
+}
